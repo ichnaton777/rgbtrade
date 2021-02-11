@@ -20,14 +20,14 @@
   session_start();
 
   // generate  5 digit random number
-  $alphanum = "abcdefghkmnpqrstwxyz2345678!?<>{}[]@#%&*";
-  $rand = substr(str_shuffle($alphanum), 0, 5);
+  $alphanum = "abcdefghkmnpqrstwxyzABCDEFGHJKLMNPQRSTVWXYZ2345678!?<>{}[]@#%&*";
+  $rand = substr(str_shuffle($alphanum), 0, 8);
 
   // create the hash for the random number and put it in the session
   $_SESSION["verify"] = md5($rand);
 
   // create the image
-  $image = imagecreate(60, 30);
+  $image = imagecreate(80, 30);
 
   // use white as the background image
   $bgColor = imagecolorallocate ($image, 242, 242,242); 

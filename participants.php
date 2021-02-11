@@ -39,7 +39,7 @@
     include('includes/sidebar.php'); 
     if(isset($_GET['searchBox'])) {
     // main search facility, read out searchbOx from index.php and set the correct section if known (should be)
-      $q = mysql_real_escape_string($_GET['searchBox']);
+      $q = mysqli_real_escape_string($db,$_GET['searchBox']);
     $extrasql = "(userNick like '%$q%' or userCity like '%$q%' or userPlan like '%$q%') and ";
   }else {
       $extrasql = "";

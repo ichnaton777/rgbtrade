@@ -2,7 +2,7 @@ Installation Instructions.
 August 28, 2007
 
 Requirements:
-* PHP 4.3   or later. GD extension required. 
+* PHP 7.0 
 * Mysql 4.1 or later
 
 Requirements are such that today's Linux Virtual Hosting Webspaces, 

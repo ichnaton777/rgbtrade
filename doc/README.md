@@ -1,37 +1,39 @@
 # Documentation
 
 This is the documentation for the Rgbtrade web-based advertising and payment system for colourcash. It consists of the following sections.
-Introduction
 
-# [Purpose of this system](purpose.md)
-    How to get a sustainable lifestyle
+## Introduction
 
-Browsing ads
+*[Purpose of this system](purpose.md "Purpose")
+*[How to get a sustainable lifestyle](lifestyle.md Lifestyle)
 
-    Overview of an ad
-    Search by keyword
-    Browse by category
-    Search by participant
-    Browse by participant
+## Browsing ads
 
-Registration
+*[Overview of an ad](overview-of-an-ad.md)
+*[Search by keyword](search-by-keyword.md)
 
-    Requirements for registration.
-    The Registration Form
-    Errors during registration
+* Browse by category
+* Search by participant
+* Browse by participant
 
-Your Profile
+## Registration
 
-    Editing your profile
-    About the Balance
-    Transaction history
-    Yearly reset
-    Lost Password
+* Requirements for registration.
+* The Registration Form
+* Errors during registration
 
-Advertising
+## Your Profile
 
-    Placing an ad
-    Using the Category Editor
+* Editing your profile
+* About the Balance
+* Transaction history
+* Yearly reset
+* Lost Password
+
+## Advertising
+
+* Placing an ad
+* Using the Category Editor
 
 Transfer / Payments in RGB
 

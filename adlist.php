@@ -68,11 +68,11 @@
   }
   if(isset($_GET['searchBox'])) {
     // main search facility, read out searchbOx from index.php and set the correct section if known (should be)
-      $q = mysqli_real_escape_string($_GET['searchBox']);
+      $q = mysqli_real_escape_string($db,$_GET['searchBox']);
       $geturl .= "&searchBox=" . $_GET['searchBox'];
 
       if(isset($_GET['section'])) {
-        $offerRequest = mysqli_real_escape_string($_GET['section']);
+        $offerRequest = mysqli_real_escape_string($db,$_GET['section']);
       } else {
         $offerRequest = '%';
       }
@@ -237,19 +237,19 @@
                    group by rgbAdCategories.adCategoryId order by rgbAdCategories.adCategoryTitleNl";
     
       // dont need fancy multipage requests here, just go straight on.
-      $q_1 = mysql_query($db,$sql_1);
-      if(mysql_error()) {
-          pc_debug("DB mysql error in sql_1: " . mysql_error($db,) . $sql_1,__FILE__,__LINE__);
+      $q_1 = mysqli_query($db,$sql_1);
+      if(mysqli_error($db)) {
+          pc_debug("DB mysql error in sql_1: " . mysqli_error($db,) . $sql_1,__FILE__,__LINE__);
       } else {
           pc_debug("DB no error in sql_1 " . $sql_1,__FILE__,__LINE__);
-          if(mysql_num_rows($q_1) == 0 ) {
+          if(mysqli_num_rows($q_1) == 0 ) {
               // print "0 advertenties gevonden : $sql_1";
           } else {
-             pc_debug(" DB sql_1 num_rows" . mysql_num_rows($q_1) ,  __FILE__,__LINE__);
+             pc_debug(" DB sql_1 num_rows" . mysqli_num_rows($q_1) ,  __FILE__,__LINE__);
           }
 
           print "<ul>";
-          while($res1 = mysql_fetch_array($q_1)) {
+          while($res1 = mysqli_fetch_array($q_1)) {
                $count     = $res1[0];
                $id        = $res1[1];
                $name      = $res1[2];
@@ -273,7 +273,7 @@ T_("Requests Found") . '</h1>';
     
       // dont need fancy multipage requests here, just go straight on.
       $q_2 = mysqli_query($db,$sql_2);
-      if(mysql_error()) {
+      if(mysqli_error($db)) {
           pc_debug("DB mysql error in sql_2: " . mysqli_error($db) . $sql_2,__FILE__,__LINE__);
       } else {
           pc_debug("DB no error in sql_2 " . $sql_2,__FILE__,__LINE__);
@@ -339,10 +339,10 @@ T_("Requests Found") . '</h1>';
             */
             $pageSize = 10;
             $pagedResults = new MySQLPagedResultSet($sqlmain,$pageSize,$db);
-            if(mysql_error())  {
-                pc_debug("mysql error in sqlmain:## $sqlmain ## " . mysql_error(),__FILE__,__LINE__);
+            if(mysqli_error($db))  {
+                pc_debug("mysql error in sqlmain:## $sqlmain ## " . mysqli_error($db),__FILE__,__LINE__);
             } else {
-                pc_debug("no mysql error in sqlmain : ## $sqlmain ##" . mysql_error(),__FILE__,__LINE__);
+                pc_debug("no mysql error in sqlmain : ## $sqlmain ##" . mysqli_error($db),__FILE__,__LINE__);
             }
             while ($res = $pagedResults->fetchObject()) {
               $myAd = new rgbAd();
