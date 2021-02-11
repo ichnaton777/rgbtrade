@@ -1,0 +1,4 @@
+alter table  rgbBalances add  column balanceName varchar(24) not null default '';
+alter table rgbBalances change column  balanceRedValue balanceRedValue float(32,3) not null default 0;
+alter table rgbBalances change column  balanceGreenValue balanceRedValue float(32,3) not null default 0;
+alter table rgbBalances change column  balanceBlueValue balanceBlueValue float(32,3) not null default 0;

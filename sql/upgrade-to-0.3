@@ -1,0 +1,11 @@
+ alter table rgbAdCategories  drop column adCategoryMainColour;
+ alter table rgbAds drop column adMainColour;
+ update rgbAdCategories set adCategoryParentId=1 where adCategoryParentId=2 or adCategoryParentId=3;
+ delete from rgbAdCategories where adCategoryId =2 or adCategoryId=3;
+ update rgbAdCategories set adCategoryTitleEn="Universal Super Group", adCategoryTitleNl="Universele SuperGroep" where adCategoryId =1;
+ insert into rgbAdCategories (adCategoryId,adCategoryTitleEn,adCategoryTitleNl,adCategoryParentId,adCategoryText,adCategoryStatus)values (2,'Please Update Group',"Groep aub aanpassen", 1,'Temporary group due to reconstruction work','available');
+ insert into rgbAdCategories (adCategoryId,adCategoryTitleEn,adCategoryTitleNl,adCategoryParentId,adCategoryText,adCategoryStatus)values (3,'Please Update Category',"Categorie aub aanpassen", 2,'Temporary group due to reconstruction work','available');
+ update rgbAds set adCategoryId =3, adGroupId=2;
+ delete from rgbAdCategories where adCategoryId >3;
+
+create index catParents on  rgbAdCategories( adCategoryParentId);

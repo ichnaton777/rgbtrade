@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg10332"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   width="210mm"
+   height="297mm"
+   sodipodi:docbase="/var/www/rgb_html/images/petrol"
+   sodipodi:docname="back_550.svg"
+   inkscape:export-filename="/var/www/rgb_html/themes/petrol/images/back_550.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata10337">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10335" />
+  <sodipodi:namedview
+     inkscape:cy="690.20882"
+     inkscape:cx="476.86903"
+     inkscape:zoom="1"
+     inkscape:window-height="624"
+     inkscape:window-width="1058"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:window-x="20"
+     inkscape:window-y="121"
+     inkscape:current-layer="svg10332" />
+  <rect
+     style="opacity:1;fill:#f2f2f0;fill-opacity:1;fill-rule:nonzero;stroke:teal;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline;font-family:Gentium"
+     id="rect2320"
+     width="301.67746"
+     height="546.67749"
+     x="173.20782"
+     y="205.77155"
+     rx="21.000002"
+     ry="18.975296" />
+</svg>

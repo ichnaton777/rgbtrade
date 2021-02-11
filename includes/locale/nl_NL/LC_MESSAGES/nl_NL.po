@@ -1,0 +1,1176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-26 20:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ad.php:118 ad.php:117 ad.php:122 ad.php:138
+msgid "Are you sure you want to do this two times?"
+msgstr "Weet je zeker dat je dit tweemaal wilt doen?"
+
+#: ad.php:134 ad.php:785 ad.php:133 ad.php:138 ad.php:154
+msgid "Offer"
+msgstr "Aanbod"
+
+#: ad.php:147 ad.php:146 ad.php:151 ad.php:167
+msgid "Request"
+msgstr "Vraag"
+
+#: ad.php:172 ad.php:171 category.php:195 ad.php:176 ad.php:192
+msgid "Title"
+msgstr "Titel"
+
+#: ad.php:188 ad.php:242 ad.php:305 adlist.php:115 balance.php:53
+#: category.php:155 categorylist.php:39 categorylist.php:66 transfer.php:98
+#: ad.php:191 ad.php:254 ad.php:196 ad.php:259 adlist.php:175 transfer.php:112
+#: themes/petrol/longtermbox.php:2 themes/petrol/balancebox.php:6
+#: transfer.php:100 adlist.php:176 transfer.php:101 adlist.php:192 ad.php:212
+#: ad.php:275 balance.php:74 balance.php:92 transfer.php:117
+#: transferlist.php:76 transferlist.php:135 themes/petrol/longtermbox.php:2
+#: themes/petrol/balancebox.php:6
+msgid "Red"
+msgstr "Rood"
+
+#: ad.php:201 ad.php:257 ad.php:332 adlist.php:116 balance.php:55
+#: category.php:169 categorylist.php:49 categorylist.php:74 transfer.php:112
+#: ad.php:206 ad.php:281 ad.php:211 ad.php:286 adlist.php:176 transfer.php:126
+#: themes/petrol/longtermbox.php:2 themes/petrol/balancebox.php:12
+#: transfer.php:114 adlist.php:177 transfer.php:115 adlist.php:193 ad.php:227
+#: ad.php:302 balance.php:74 balance.php:92 transfer.php:131
+#: transferlist.php:76 transferlist.php:135 themes/petrol/longtermbox.php:2
+#: themes/petrol/balancebox.php:12
+msgid "Green"
+msgstr "Groen"
+
+#: ad.php:215 ad.php:272 ad.php:361 adlist.php:117 balance.php:57
+#: category.php:183 categorylist.php:57 categorylist.php:83 transfer.php:123
+#: ad.php:221 ad.php:310 ad.php:226 ad.php:315 adlist.php:177 transfer.php:137
+#: themes/petrol/longtermbox.php:2 themes/petrol/balancebox.php:18
+#: transfer.php:125 adlist.php:178 transfer.php:126 adlist.php:194 ad.php:242
+#: ad.php:331 balance.php:74 balance.php:92 transfer.php:142
+#: transferlist.php:76 transferlist.php:135 themes/petrol/longtermbox.php:2
+#: themes/petrol/balancebox.php:18
+msgid "Blue"
+msgstr "Blauw"
+
+#: ad.php:367 ad.php:316 ad.php:321 ad.php:337
+#, php-format
+msgid "Group %s[change]%s"
+msgstr "Groep %s[wijzigen]%s"
+
+#: ad.php:370 category.php:222 ad.php:319 category.php:152 adlist.php:147
+#: adlist.php:182 ad.php:324 adlist.php:207 adlist.php:243 adlist.php:208
+#: adlist.php:245 adlist.php:209 adlist.php:246 adlist.php:225 adlist.php:262
+#: ad.php:340 category.php:168
+msgid "Group"
+msgstr "Groep"
+
+#: ad.php:421 adlist.php:148 adlist.php:154 adlist.php:147 ad.php:374
+#: ad.php:379 ad.php:395
+msgid "Category"
+msgstr "Categorie"
+
+#: ad.php:436 balance.php:67 ad.php:389 transfer.php:136 ad.php:394
+#: balance.php:60 transfer.php:150 transfer.php:138 balance.php:62
+#: transfer.php:139 ad.php:410 transfer.php:155 transferlist.php:136
+msgid "Description"
+msgstr "Omschrijving"
+
+#: ad.php:452 category.php:234 contact.php:63 register.php:106 ad.php:405
+#: category.php:164 ad.php:410 register.php:109 register.php:115
+#: contact.php:64 register.php:116 ad.php:426 category.php:180 contact.php:80
+#: register.php:132
+msgid "Security Code"
+msgstr "Veiligheids Code"
+
+#: ad.php:460 adlist.php:210 adlist.php:215 adlist.php:208 ad.php:413
+#: ad.php:418 adlist.php:269 adlist.php:271 adlist.php:272 adlist.php:288
+#: ad.php:434
+msgid "Photo"
+msgstr "Foto"
+
+#: ad.php:547 ad.php:569 category.php:241 editprofile.php:73 register.php:115
+#: ad.php:500 ad.php:522 category.php:171 category.php:393 error.php:80
+#: ad.php:505 ad.php:527 register.php:118 register.php:124 category.php:394
+#: editprofile.php:74 register.php:125 ad.php:521 ad.php:543 category.php:187
+#: category.php:410 editprofile.php:90 error.php:96 register.php:141
+msgid "Save"
+msgstr "Opslaan"
+
+#: ad.php:694 ad.php:766 ad.php:632 ad.php:689 ad.php:639 ad.php:696
+#: ad.php:698 ad.php:655 ad.php:714
+msgid "Ad Editor"
+msgstr "Advertentie Bewerken"
+
+#: ad.php:757 ad.php:760 ad.php:680 ad.php:683 ad.php:687 ad.php:690
+#: ad.php:688 ad.php:691 ad.php:704 ad.php:707
+msgid "You can now see how visitors will see your ad."
+msgstr "Je kunt nu zien, hoe bezoekers je advertentie zullen zien."
+
+#: ad.php:757 ad.php:680 ad.php:687 ad.php:688 ad.php:704
+msgid "Your ad has been placed"
+msgstr "Je advertentie is geplaatst"
+
+#: ad.php:760 ad.php:683 ad.php:690 ad.php:691 ad.php:707
+msgid "Your ad has been saved"
+msgstr "Je advertentie is opgeslagen"
+
+#: ad.php:807 ad.php:730 ad.php:737 ad.php:738 ad.php:754
+msgid "Value"
+msgstr "Waarde"
+
+#: ad.php:840
+msgid "Main Color"
+msgstr "Hoofd Kleur"
+
+#: ad.php:905 contact.php:64 editprofile.php:72 register.php:112
+#: transfer.php:137 ad.php:817 category.php:393 ad.php:824 register.php:115
+#: register.php:121 transfer.php:151 transfer.php:139 ad.php:825
+#: category.php:394 contact.php:65 editprofile.php:73 register.php:122
+#: transfer.php:140 ad.php:841 category.php:410 contact.php:81
+#: editprofile.php:89 register.php:138 transfer.php:156
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: adDelete.php:21 adDelete.php:37
+#, php-format
+msgid "Your ad has been deleted. Please %s continue to your ad list %s."
+msgstr ""
+"Je advertentie is verwijderd. Ga %s door naar het advertentie overzicht %s."
+
+#: adDelete.php:35 adDelete.php:51
+msgid "Delete Ad"
+msgstr "Advertentie verwijderen"
+
+#: adlist.php:92 balance.php:150 balance.php:151 profile.php:74
+#: includes/sidebar.php:72 adlist.php:152 balance.php:144 balance.php:146
+#: profile.php:83 adlist.php:168 balance.php:64 profile.php:88 profile.php:112
+#: transferlist.php:66 transferlist.php:223 includes/sidebar.php:72
+msgid "Ads"
+msgstr "Advertenties"
+
+#: adlist.php:98 adlist.php:158 adlist.php:174
+msgid "Are you sure you want to delete this ad?"
+msgstr "Wil je deze advertentie echt verwijderen?"
+
+#: adlist.php:120 adlist.php:180 adlist.php:181 adlist.php:197
+msgid "Offers Found"
+msgstr "Gevonden aanbod"
+
+#: adlist.php:158 adlist.php:157 adlist.php:217 adlist.php:218 adlist.php:219
+#: adlist.php:235
+msgid "Requests Found"
+msgstr "Gevonden vraag"
+
+#: adlist.php:212 adlist.php:217 adlist.php:210 adlist.php:271 adlist.php:273
+#: adlist.php:274 adlist.php:290
+msgid "Offer/Request"
+msgstr "Aanbod/Vraag"
+
+#: adlist.php:214 adlist.php:219 adlist.php:212 adlist.php:273 adlist.php:275
+#: adlist.php:276 adlist.php:292
+msgid "Advertiser"
+msgstr "Adverteerder"
+
+#: adlist.php:249 adlist.php:254 adlist.php:247 adlist.php:307 adlist.php:309
+#: adlist.php:310 adlist.php:326
+msgid "Delete this Ad"
+msgstr "Advertentie verwijderen"
+
+#: balance.php:16 contact.php:32 contact.php:9 contact.php:33 balance.php:32
+#: contact.php:25 contact.php:49 transferlist.php:32
+msgid "Ooops"
+msgstr "Oeps"
+
+#: balance.php:16 balance.php:32
+msgid "Please login before asking for your balance"
+msgstr "Log eerst in voordat je om een balans vraagt"
+
+#: balance.php:28 balance.php:39 includes/participantbox.php:14 profile.php:78
+#: includes/participantbox.php:13 themes/petrol/balancebox.php:3
+#: balance.php:41 profile.php:87 balance.php:44 balance.php:71 profile.php:85
+#: profile.php:116 transferlist.php:44 transferlist.php:73
+#: transferlist.php:225 includes/participantbox.php:31
+#: includes/participantbox.php:31 themes/petrol/balancebox.php:3
+#, php-format
+msgid "Balance"
+msgstr "Balans"
+
+#: balance.php:51 profile.php:131 themes/petrol/longtermbox.php:1
+#: balance.php:88 themes/petrol/longtermbox.php:1
+msgid "Yearly Total"
+msgstr "Totaal per Jaar"
+
+#: balance.php:67 balance.php:60 balance.php:62 balance.php:74 balance.php:92
+#: transferlist.php:76 transferlist.php:135
+msgid "Date"
+msgstr "Datum"
+
+#: balance.php:67 balance.php:60 balance.php:62 transferlist.php:135
+msgid "Participant"
+msgstr "Deelnemer"
+
+#: balance.php:67 balance.php:60 balance.php:62
+msgid "RGB"
+msgstr "RGB"
+
+#: balance.php:105 transfer.php:89 balance.php:98 transfer.php:103
+#: transfer.php:91 balance.php:100 transfer.php:92 transfer.php:108
+#: transferlist.php:174
+msgid "To"
+msgstr "Aan"
+
+#: balance.php:108 transfer.php:92 balance.php:101 transfer.php:106
+#: transfer.php:94 balance.php:103 transfer.php:95 transfer.php:111
+#: transferlist.php:177
+msgid "From"
+msgstr "Van"
+
+#: balance.php:113 balance.php:119 balance.php:106 balance.php:112
+#: balance.php:108 balance.php:114 transferlist.php:182 transferlist.php:188
+msgid "By"
+msgstr "Door"
+
+#: balance.php:149 balance.php:150 includes/participantbox.php:12
+#: includes/participantbox.php:11 balance.php:143 balance.php:145
+#: balance.php:61 transferlist.php:63 transferlist.php:222
+#: includes/participantbox.php:29 includes/participantbox.php:29
+msgid "Profile"
+msgstr "Profiel"
+
+#: balance.php:151 balance.php:152 profile.php:80 transfer.php:57
+#: transfer.php:82 balance.php:145 transfer.php:96 transfer.php:84
+#: balance.php:147 profile.php:89 transfer.php:85 balance.php:63
+#: profile.php:87 profile.php:118 transfer.php:73 transfer.php:101
+#: transferlist.php:65 transferlist.php:224
+msgid "New Transfer"
+msgstr "Nieuwe Boeking"
+
+#: balance.php:152 balance.php:153 balance.php:146 balance.php:148
+#: transferlist.php:226
+msgid "Send Email"
+msgstr "Stuur Email"
+
+#: category.php:105 category.php:99 category.php:115
+msgid "Available"
+msgstr "Beschikbaar"
+
+#: category.php:117 category.php:111 category.php:127
+msgid "Unavailable"
+msgstr "Niet beschikbaar"
+
+#: category.php:144
+msgid "Color"
+msgstr "Kleur"
+
+#: category.php:249 category.php:179
+msgid "International Title"
+msgstr "Internationale Titel"
+
+#: category.php:256 category.php:186 category.php:202
+msgid "The International Title has a minimum of 3 characters"
+msgstr "De Internationale Titel heeft minimaal 3 tekens"
+
+#: category.php:272 category.php:202 category.php:218
+msgid "The Title has a minimum of 3 characters"
+msgstr "De titel heeft tenminste 3 tekens"
+
+#: category.php:283 category.php:213 category.php:229
+msgid "There is no valid ID, this must be a bug"
+msgstr "Er is geen geldig ID, dit moet een storing zijn"
+
+#: categorylist.php:15 categorylist.php:25 categorylist.php:27
+#: categorylist.php:31 categorylist.php:43
+msgid "Category List"
+msgstr "Categorie Lijst"
+
+#: categorylist.php:38 categorylist.php:39 categorylist.php:40
+#: categorylist.php:56
+msgid "New Category"
+msgstr "Nieuwe Categorie"
+
+#: categorylist.php:65 categorylist.php:66 categorylist.php:82
+msgid "Unavailable Categories"
+msgstr "Niet beschikbare Categorën"
+
+#: contact.php:32 contact.php:33 contact.php:49
+msgid "The security code is incorrect."
+msgstr "De veilidheids code is niet correct"
+
+#: contact.php:52 register.php:38 contact.php:53 contact.php:69
+msgid "Ok"
+msgstr "Ok"
+
+#: contact.php:52 contact.php:53 contact.php:69
+msgid "Your message has been sent."
+msgstr "Uw bericht is verzonden"
+
+#: contact.php:59 contact.php:60 contact.php:76
+msgid "Contact with"
+msgstr "Contact met"
+
+#: contact.php:60 contact.php:61 contact.php:77
+msgid "Send Message"
+msgstr "Stuur bericht"
+
+#: contact.php:61 contact.php:62 contact.php:78
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: contact.php:62 profile.php:76 contact.php:63 profile.php:85 contact.php:79
+#: profile.php:114
+msgid "Message"
+msgstr "Bericht"
+
+#: contact.php:65 contact.php:66 contact.php:82
+msgid "Send by Email"
+msgstr "Versturen per Email"
+
+#: editprofile.php:9 editprofile.php:31 editprofile.php:32 editprofile.php:25
+#: editprofile.php:48
+msgid "Change Profile"
+msgstr "Wijzig Profiel"
+
+#: editprofile.php:37 register.php:100 error.php:175 register.php:103
+#: register.php:109 editprofile.php:38 register.php:110 editprofile.php:54
+#: error.php:191 register.php:126
+msgid "Email"
+msgstr "Email"
+
+#: editprofile.php:39 profile.php:104 editprofile.php:40 profile.php:113
+#: editprofile.php:56 profile.php:142
+msgid "Adress"
+msgstr "Adres"
+
+#: editprofile.php:43 profile.php:106 editprofile.php:44 profile.php:115
+#: editprofile.php:60 profile.php:144
+msgid "Zip Code"
+msgstr "Postcode"
+
+#: editprofile.php:45 profile.php:108 editprofile.php:46 profile.php:117
+#: editprofile.php:62 profile.php:146
+msgid "City"
+msgstr "Plaats"
+
+#: editprofile.php:47 profile.php:109 editprofile.php:48 profile.php:118
+#: editprofile.php:64 profile.php:147
+msgid "Area"
+msgstr "Regio"
+
+#: editprofile.php:49 editprofile.php:51 profile.php:110 profile.php:111
+#: editprofile.php:50 editprofile.php:52 profile.php:119 profile.php:120
+#: editprofile.php:66 editprofile.php:68 profile.php:148 profile.php:149
+msgid "Phone"
+msgstr "Telefoon"
+
+#: editprofile.php:53 profile.php:112 editprofile.php:54 profile.php:121
+#: editprofile.php:70 profile.php:150
+msgid "Website"
+msgstr "Website"
+
+#: editprofile.php:55 participants.php:35 profile.php:113 editprofile.php:56
+#: participants.php:36 profile.php:122 editprofile.php:72 participants.php:53
+#: profile.php:151
+msgid "Plan"
+msgstr "Plan"
+
+#: editprofile.php:59 participants.php:35 profile.php:114 editprofile.php:60
+#: participants.php:36 profile.php:123 editprofile.php:76 participants.php:53
+#: profile.php:152
+msgid "Avatar"
+msgstr "Avatar"
+
+#: editprofile.php:62 editprofile.php:63 editprofile.php:79
+msgid "Change Avatar"
+msgstr "Wijzig Avatar"
+
+#: editprofile.php:66 includes/loginbox.php:20 register.php:102 error.php:158
+#: register.php:105 register.php:111 editprofile.php:67 register.php:112
+#: editprofile.php:83 error.php:174 register.php:128 includes/loginbox.php:38
+#: includes/loginbox.php:38
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: editprofile.php:69 register.php:104 register.php:107 register.php:113
+#: editprofile.php:70 register.php:114 editprofile.php:86 register.php:130
+msgid "Repeat Password"
+msgstr "Herhaal Wachtwoord"
+
+#: includes/fakebox.php:4 includes/loginbox.php:4
+#: includes/participantbox.php:3 includes/participantbox.php:21
+#: includes/loginbox.php:22 includes/fakebox.php:21
+#: includes/participantbox.php:21 includes/loginbox.php:22
+#: includes/fakebox.php:21
+msgid "What is"
+msgstr "Wat is"
+
+#: includes/fakebox.php:5 includes/fakebox.php:22 includes/fakebox.php:22
+msgid "Opening Soon:"
+msgstr "Binnenkort Geopend:"
+
+#: includes/fakebox.php:6 includes/loginbox.php:6
+#: includes/participantbox.php:5 includes/participantbox.php:23
+#: includes/loginbox.php:24 includes/fakebox.php:23
+#: includes/participantbox.php:23 includes/loginbox.php:24
+#: includes/fakebox.php:23
+msgid "How does it work?"
+msgstr "Hoe werkt het?"
+
+#: includes/loginbox.php:5 register.php:90 register.php:93 register.php:99
+#: register.php:100 register.php:116 includes/loginbox.php:23
+#: includes/loginbox.php:23
+msgid "Register"
+msgstr "Registreer"
+
+#: includes/loginbox.php:7 includes/participantbox.php:6
+#: includes/rgbtop.php:82 includes/rgbtop.php:83 includes/rgbtop.php:84
+#: includes/rgbtop.php:87 includes/rgbtop.php:89 includes/rgbtop.php:90
+#: includes/rgbtop.php:95 includes/rgbtop.php:96 includes/rgbtop.php:98
+#: includes/rgbtop.php:105 includes/rgbtop.php:108 participants.php:11
+#: participants.php:33 includes/participantbox.php:4 includes/rgbtop.php:109
+#: includes/rgbtop.php:112 includes/rgbtop.php:120 includes/rgbtop.php:123
+#: includes/rgbtop.php:130 includes/rgbtop.php:133 includes/rgbtop.php:113
+#: includes/rgbtop.php:116 includes/rgbtop.php:124 includes/rgbtop.php:127
+#: includes/rgbtop.php:134 includes/rgbtop.php:137 includes/rgbtop.php:117
+#: includes/rgbtop.php:128 includes/rgbtop.php:131 includes/rgbtop.php:138
+#: includes/rgbtop.php:141 participants.php:34 participants.php:27
+#: participants.php:51 includes/participantbox.php:22 includes/rgbtop.php:145
+#: includes/rgbtop.php:148 includes/rgbtop.php:155 includes/rgbtop.php:158
+#: includes/loginbox.php:25 includes/participantbox.php:22
+#: includes/rgbtop.php:134 includes/rgbtop.php:137 includes/rgbtop.php:145
+#: includes/rgbtop.php:148 includes/rgbtop.php:155 includes/rgbtop.php:158
+#: includes/loginbox.php:25
+msgid "Participants"
+msgstr "Deelnemers"
+
+#: includes/loginbox.php:18 register.php:98 error.php:156 error.php:173
+#: register.php:101 register.php:107 register.php:108 error.php:172
+#: error.php:189 register.php:124 includes/loginbox.php:36
+#: includes/loginbox.php:36
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: includes/pagedresults.php:86 includes/pagedresults.php:87
+#: includes/pagedresults.php:87
+msgid "Previous"
+msgstr "Vorige"
+
+#: includes/pagedresults.php:100 includes/pagedresults.php:101
+#: includes/pagedresults.php:101
+msgid "Next"
+msgstr "Volgende"
+
+#: includes/participantbox.php:4
+msgid "Welcome"
+msgstr "Welkom"
+
+#: includes/participantbox.php:12
+msgid "My"
+msgstr "Mijn"
+
+#: includes/participantbox.php:13 includes/participantbox.php:12
+#: includes/participantbox.php:30 includes/participantbox.php:30
+msgid "My Ads"
+msgstr "Mijn Advertenties"
+
+#: includes/participantbox.php:14 includes/participantbox.php:13
+#: includes/participantbox.php:31 includes/participantbox.php:31
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: includes/participantbox.php:15 includes/participantbox.php:14
+#: includes/participantbox.php:32 includes/participantbox.php:32
+msgid "New Ad"
+msgstr "Nieuwe Advertentie"
+
+#: includes/rgbUser.php:195 includes/rgbUser.php:212 includes/rgbUser.php:212
+msgid "Location"
+msgstr "Locatie"
+
+#: includes/rgbtop.php:59 includes/rgbtop.php:83 includes/rgbtop.php:87
+#: includes/rgbtop.php:91 includes/rgbtop.php:108 includes/rgbtop.php:108
+#, php-format
+msgid "Please %s continue"
+msgstr "%s Ga verder"
+
+#: includes/rgbtop.php:82 includes/rgbtop.php:83 includes/rgbtop.php:85
+#: includes/rgbtop.php:89 includes/rgbtop.php:90 includes/rgbtop.php:93
+#: includes/rgbtop.php:95 includes/rgbtop.php:96 includes/rgbtop.php:97
+#: includes/rgbtop.php:104 includes/rgbtop.php:107 includes/rgbtop.php:110
+#: includes/rgbtop.php:118 includes/rgbtop.php:122 includes/rgbtop.php:129
+#: includes/rgbtop.php:132 includes/rgbtop.php:111 includes/rgbtop.php:114
+#: includes/rgbtop.php:126 includes/rgbtop.php:133 includes/rgbtop.php:136
+#: includes/rgbtop.php:115 includes/rgbtop.php:130 includes/rgbtop.php:137
+#: includes/rgbtop.php:140 includes/rgbtop.php:135 includes/rgbtop.php:143
+#: includes/rgbtop.php:147 includes/rgbtop.php:154 includes/rgbtop.php:157
+#: includes/rgbtop.php:132 includes/rgbtop.php:135 includes/rgbtop.php:143
+#: includes/rgbtop.php:147 includes/rgbtop.php:154 includes/rgbtop.php:157
+msgid "Offers"
+msgstr "Aanbod"
+
+#: includes/rgbtop.php:82 includes/rgbtop.php:83 includes/rgbtop.php:86
+#: includes/rgbtop.php:89 includes/rgbtop.php:90 includes/rgbtop.php:94
+#: includes/rgbtop.php:95 includes/rgbtop.php:96 includes/rgbtop.php:97
+#: includes/rgbtop.php:105 includes/rgbtop.php:108 includes/rgbtop.php:111
+#: includes/rgbtop.php:119 includes/rgbtop.php:122 includes/rgbtop.php:130
+#: includes/rgbtop.php:133 includes/rgbtop.php:112 includes/rgbtop.php:115
+#: includes/rgbtop.php:123 includes/rgbtop.php:126 includes/rgbtop.php:134
+#: includes/rgbtop.php:137 includes/rgbtop.php:116 includes/rgbtop.php:127
+#: includes/rgbtop.php:138 includes/rgbtop.php:141 includes/rgbtop.php:136
+#: includes/rgbtop.php:144 includes/rgbtop.php:147 includes/rgbtop.php:155
+#: includes/rgbtop.php:158 includes/rgbtop.php:133 includes/rgbtop.php:136
+#: includes/rgbtop.php:144 includes/rgbtop.php:147 includes/rgbtop.php:155
+#: includes/rgbtop.php:158
+msgid "Requests"
+msgstr "Vraag"
+
+#: includes/rgbtop.php:84 includes/rgbtop.php:88 includes/rgbtop.php:91
+#: includes/rgbtop.php:97 includes/rgbtop.php:99 includes/rgbtop.php:109
+#: includes/rgbtop.php:113 includes/rgbtop.php:124 includes/rgbtop.php:134
+#: includes/rgbtop.php:117 includes/rgbtop.php:128 includes/rgbtop.php:138
+#: includes/rgbtop.php:121 includes/rgbtop.php:132 includes/rgbtop.php:142
+#: includes/rgbtop.php:149 includes/rgbtop.php:159 includes/rgbtop.php:138
+#: includes/rgbtop.php:149 includes/rgbtop.php:159
+msgid "Search in:"
+msgstr "Zoeken in"
+
+#: includes/searchbox.php:11 includes/sidebar.php:48 includes/searchbox.php:30
+#: includes/searchbox.php:30 includes/sidebar.php:48
+msgid "Search"
+msgstr "Zoek"
+
+#: includes/searchbox.php:47 transfer.php:137 transfer.php:151
+#: transfer.php:139 transfer.php:140 transfer.php:156
+msgid "Submit"
+msgstr "Verzenden"
+
+#: includes/sidebar.php:44 includes/sidebar.php:63 includes/sidebar.php:63
+msgid "Category Editor"
+msgstr "Categorie Beheer"
+
+#: participants.php:35 participants.php:36 participants.php:53
+msgid "Balance RGB"
+msgstr "Balans RGB"
+
+#: participants.php:35 participants.php:36 participants.php:53
+msgid "Details"
+msgstr "Details"
+
+#: profile.php:82 profile.php:91 profile.php:120
+msgid "Edit Profile"
+msgstr "Wijzig Profiel"
+
+#: profile.php:133
+msgid "A summary of yearly closing balances, before the reset."
+msgstr "Een samenvatting van totalen per jaar, voor de reset."
+
+#: register.php:21 register.php:37
+msgid "Passwords do not match. Enter the same password twice."
+msgstr "Wachtwoorden komen niet overeen. Type hetzelfde wachtwoord tweemaal."
+
+#: register.php:21 register.php:37
+msgid "Registration Failed"
+msgstr "Registratie mislukt"
+
+#: register.php:39
+msgid "Registration completed. You can now log in."
+msgstr "Registratie voltooid. U kunt nu inloggen."
+
+#: register.php:47 register.php:53 register.php:69
+msgid "Username or Email address is already in use"
+msgstr "Gebruikersnaam of email adres is al in gebruik"
+
+#: register.php:48 register.php:54 register.php:70
+#, php-format
+msgid ""
+"Someone has alreay taken this username or email address. You should %s try "
+"again %s with a different username or %s ask for a new password %s for this "
+"email address."
+msgstr ""
+"Iemand heeft deze gebruikersnaam of email adres al in gebruik.%sProbeer het "
+"nogmaals%s met een andere gebruikersnaam of %svraag om een nieuw wachtwoord "
+"op dit email adres."
+
+#: register.php:63 register.php:66 register.php:72 register.php:88
+msgid "Security Code Incorrect"
+msgstr "Veiligheids Code niet correct"
+
+#: register.php:64 register.php:67 register.php:73 register.php:89
+msgid ""
+"Please enter the characters of the Security Code in the textfield. Note that "
+"all characters on the keyboard may be used."
+msgstr ""
+"Type aub. de tekens van de Veiligheids Code in het tekstveld.Merk op dat "
+"alle toetsen van het toetsenbord kunnen worden gebruikt."
+
+#: register.php:74 register.php:77 register.php:83 register.php:99
+msgid "Registration"
+msgstr "Registreren"
+
+#: register.php:108 register.php:111 register.php:117 register.php:118
+#: register.php:134
+#, php-format
+msgid "I agree to the %s conditions %s."
+msgstr "Ik ga accoord met de %s voorwaarden %s."
+
+#: transfer.php:19 transfer.php:90 transfer.php:104 transfer.php:92
+#: transfer.php:93 transfer.php:109
+#, fuzzy
+msgid "from"
+msgstr "van"
+
+#: transfer.php:35 transfer.php:51
+msgid "Oops"
+msgstr "Oeps"
+
+#: transfer.php:35 transfer.php:51
+msgid "Who is it you want to transfer to?"
+msgstr "Aan of van wie wilde u een boeking doen?"
+
+#: transfer.php:71
+msgid "message"
+msgstr "bericht"
+
+#: transfer.php:72 transfer.php:86 transfer.php:74 transfer.php:75
+#: transfer.php:91
+msgid "Transfer Completed"
+msgstr "Boeking Voltooid"
+
+#: transfer.php:73 transfer.php:87 transfer.php:75 transfer.php:76
+#: transfer.php:92
+#, php-format
+msgid "Your transfer has been completed. You can now %s check your balance %s"
+msgstr "Uw boeking is voltooid. U kunt nu uw %s balans controleren%s"
+
+#: transfer.php:82 transfer.php:96 transfer.php:84 transfer.php:85
+#: transfer.php:101
+msgid "to or from"
+msgstr "naar of van"
+
+#: transfer.php:87 transfer.php:101 transfer.php:89 transfer.php:90
+#: transfer.php:106
+msgid "RGB Transfer"
+msgstr "RGB Boeking"
+
+#: category.php:347 category.php:349 category.php:365
+msgid "List"
+msgstr "Lijst"
+
+#: error.php:60 error.php:76
+msgid "Your password has been changed. Please continue."
+msgstr "Uw wachtwoord is veranderd. Ga door."
+
+#: error.php:62 error.php:78
+msgid "Your password has been changed."
+msgstr "Uw wachtwoord is veranderd."
+
+#: error.php:63 error.php:79
+msgid "You can now log in."
+msgstr "U kunt nu inloggen."
+
+#: error.php:65 error.php:81
+msgid "The change of password has failed."
+msgstr "Het wijzigen van uw wachtwoord is mislukt."
+
+#: error.php:77 error.php:93
+msgid "Set new password"
+msgstr "Stel een nieuw wachtwoord in"
+
+#: error.php:78 error.php:94
+msgid "Enter a password"
+msgstr "Voer een wachtwoord in"
+
+#: error.php:79 error.php:95
+msgid "Repeat password"
+msgstr "Herhaal wachtwoord"
+
+#: error.php:101 error.php:117
+msgid "Invalid codes"
+msgstr "Ongeldige codes"
+
+#: error.php:102 error.php:118
+msgid ""
+"The combination of email address, username and verification code is not "
+"valid."
+msgstr ""
+"De combinatie van email adres, gebruikersnaam en bevestigingscode is "
+"ongeldig."
+
+#: error.php:115 error.php:131
+msgid "Email address and password do not match."
+msgstr "Email adres en wachtwoord komen niet overeen."
+
+#: error.php:130 error.php:146
+msgid "Verification email for a new password"
+msgstr "Verificatie email voor een nieuw wachwtwoord"
+
+#: error.php:131 error.php:147
+#, php-format
+msgid ""
+"A new password has been requested for user %s on the website %s. To change "
+"your password, follow this link: \n"
+"\n"
+"http://%s/%s?userEmail=%s&userNick=%s&verify=%s \n"
+"\n"
+"If you do not want a new password or you have not asked for this message, "
+"please ignore this email.\n"
+"\n"
+"Thank You!"
+msgstr ""
+"Een nieuw wachtwoord is aangevraagd voor gebruiker %s op de website %s. Om "
+"uw wachtwoord te wijzigen, volg deze link:\n"
+"http://%s/%s?userEmail=%s&userNick=%s&verify=%s \n"
+"\n"
+"Als u geen nieuw wachtwoord wilt of niet om dit bericht heeft gevraagd, kunt "
+"u dit bericht negeren\n"
+"Dank u."
+
+#: error.php:137 error.php:153
+msgid "Email sent"
+msgstr "Email verzonden"
+
+#: error.php:138 error.php:154
+msgid ""
+"You will receive an email with a link. If you follow that link, you can "
+"change the password."
+msgstr ""
+"U ontvangt een email met een link. Als u de link volgt, kunt u hetwachtwoord "
+"wijzigen"
+
+#: error.php:141 error.php:157
+msgid "Email failed"
+msgstr "Email mislukt"
+
+#: error.php:142 error.php:158
+msgid "It was not possible to send an email. Please try again later. "
+msgstr "Het was niet mogelijk een email te sturen. Probeer het later nogmaals."
+
+#: error.php:147 error.php:163
+msgid "You are not logged in"
+msgstr "U bent niet ongelogd"
+
+#: error.php:148 error.php:164
+msgid "Please try to log in."
+msgstr "Probeer alstublieft in te loggen."
+
+#: error.php:165 error.php:181
+msgid "Password Lost?"
+msgstr "Wachtwoord kwijt?"
+
+#: error.php:166 error.php:182
+msgid "Enter your username and email address to receive the confirmation code."
+msgstr ""
+"Voer uw gebruikersnaam en email adres in om de bevestigingscode te ontvangen."
+
+#: error.php:178 error.php:194
+msgid "Send Code"
+msgstr "Verstuur Code"
+
+#: error.php:183 error.php:199
+msgid "Error without error ?"
+msgstr "Fout zonder fout?"
+
+#: transfer.php:93 transfer.php:107 transfer.php:95 transfer.php:96
+#: transfer.php:112
+msgid "to"
+msgstr "aan"
+
+#: includes/participantbox.php:6 includes/participantbox.php:24
+#: includes/participantbox.php:24
+msgid "Categories"
+msgstr "Categorie&euml;n"
+
+#: includes/rgbCategory.php:88 includes/rgbCategory.php:105
+#: includes/rgbCategory.php:105
+msgid "Category added"
+msgstr "Categorie toegevoegd"
+
+#: includes/rgbCategory.php:91 includes/rgbCategory.php:108
+#: includes/rgbCategory.php:108
+msgid "Error: the category was not added."
+msgstr "Fout: de categorie is niet toegevoegd."
+
+#: includes/rgbCategory.php:141 includes/rgbCategory.php:144
+#: includes/rgbCategory.php:161 includes/rgbCategory.php:161
+msgid "The category has not been saved"
+msgstr "De categorie is niet opgeslagen"
+
+#: includes/rgbCategory.php:143 includes/rgbCategory.php:146
+#: includes/rgbCategory.php:163 includes/rgbCategory.php:163
+#, php-format
+msgid "The category has been saved. Please %s continue %s"
+msgstr "De categorie is opgeslagen. %S Ga door %s"
+
+#: includes/whatistext.php:4 includes/whatistext.php:4
+msgid "Wecome to"
+msgstr "Welkom op"
+
+#: includes/whatistext.php:8 includes/whatistext.php:8
+msgid ""
+"This is an online marketplace with built in payment system, based and "
+"inspired upon nature itself."
+msgstr ""
+"Dit is een online marktplaats met een ingebouwd betaalsysteem, gebaseerd en "
+"ge&iuml;nsprireerd op de natuur zelf."
+
+#: includes/whatistext.php:11 includes/whatistext.php:11
+msgid "Other kind of money."
+msgstr "Ander soort geld"
+
+#: includes/whatistext.php:15 includes/whatistext.php:15
+msgid ""
+"What makes this RGB-moneysystem so special is that the \"environmental\" "
+"value has been built into the price itself. There are lots of complex "
+"calculations to show the sustainability of products, such as kg CO<sub>2</"
+"sub>, the ecological footprint and the tons of waste. All of these are used "
+"within a unique discovery: the RGB-moneysystem. You are free to use this "
+"money, make it and spend it using the online trading and payment system on "
+"this website. All ads and transactions are completely transparent to avoid "
+"abuse and exuberant saving using social control."
+msgstr ""
+"Het bijzondere aan dit RGB-geldsysteem is dat de \"milieu\"-waarde in de "
+"prijs ingebouwd is. Er zijn tal van ingewikkelde tellingen om de "
+"milieuvriendelijkheid van producten aan te geven, zoals de kilogrammen "
+"CO<sub>2</sub>, de Ecologische Voetafdruk en de tonnen afval. Deze zijn "
+"samengenomen in een unieke vinding: het RGB-geldsysteem. U kunt dit geld "
+"vrij gebruiken, verdienen en uitgeven via het online handels- en "
+"betalingssysteem op deze website.  Alle advertenties en transacties zijn "
+"volledig transparant, zodat misbruik en oppotten wordt voorkomen door "
+"sociale controle."
+
+#: includes/whatistext.php:19 includes/whatistext.php:19
+msgid "Trade and cooperate"
+msgstr "Handel en werk samen"
+
+#: includes/whatistext.php:23 includes/whatistext.php:23
+msgid ""
+"On this website you can meet and contact suppliers of delicious organic "
+"vegetables and fruits from your area. Small amateur growers can offer their "
+"surplusses without profit aim. In the future, clothing and art may be "
+"offered here. Second-hand products are all over the place. This site also "
+"offers the possibility to sell your waste products for reuse. This way we "
+"close natural cycles and we hope to balance our lifestyles in an economical "
+"and ecological sense."
+msgstr ""
+"Op deze site komt u in contact met aanbieders van de heerlijkste biologische "
+"groenten en fruit uit de eigen regio. Kleine hobbytelers kunnen hun "
+"overschotten juist verkopen zonder winstoogmerk.  In de toekomst wordt "
+"mogelijk ook kleding en kunst aangeboden. Gebruikte spullen zijn volop te "
+"vinden. Ook biedt deze website de mogelijkheid om uw afvalproducten te "
+"verkopen voor hergebruik. Zo sluiten we de natuurlijke kringlopen en hopen "
+"we onze leefstijl in ecologisch én economisch evenwicht te brengen."
+
+#: includes/whatistext.php:27 includes/whatistext.php:27
+msgid "Register and advertise"
+msgstr "Registreren en adverteren"
+
+#: includes/whatistext.php:31 includes/whatistext.php:31
+msgid ""
+"All you need to do is to register and place and read ads. Or browse through "
+"the list of suppliers and their transaction histories. This is our way to "
+"the balance of nature."
+msgstr ""
+"Het enige dat u daarvoor hoeft te doen is te registreren en advertenties te "
+"plaatsen en te lezen. Of blader door de lijsten van aanbieders en hun "
+"transactie- geschiedenis.  Dit is onze weg naar natuurlijk evenwicht."
+
+#: includes/whatistext.php:34 includes/whatistext.php:34
+msgid "Beta-fase"
+msgstr "Beta-fase"
+
+#: includes/whatistext.php:36 includes/whatistext.php:36
+msgid ""
+"This system is currently under development, but is also already open for "
+"usage. Bugs will be fixed by the staff \n"
+"of programmers from rgbtrade.org."
+msgstr ""
+"Het systeem is nog in ontwikkeling, maar u kunt het systeem al gebruiken.Er "
+"zullen hier en daar foutjes optreden die dan door de programmeurs van "
+"kleureneconomie.nl zullen worden opgelost."
+
+#: includes/rgbtrade_intro.php:1 includes/rgbtrade_intro.php:20
+#: includes/rgbtrade_intro.php:20
+msgid " is an online marketplace for a sustainable lifestyle."
+msgstr "  is een online marktplaats voor een duurzame levensstijl."
+
+#: includes/rgbtrade_intro.php:2 includes/rgbtrade_intro.php:21
+#: includes/rgbtrade_intro.php:21
+msgid "Read and write <a href='adlist.php'>ads"
+msgstr " Bekijk en plaats <a href='adlist.php'>advertenties"
+
+#: includes/rgbtrade_intro.php:3 includes/rgbtrade_intro.php:22
+#: includes/rgbtrade_intro.php:22
+msgid "Meet other <a href='participants.php'>participants"
+msgstr "Maak kennis met de andere <a href='participants.php'>deelnemers"
+
+#: includes/rgbtrade_intro.php:4 includes/rgbtrade_intro.php:23
+#: includes/rgbtrade_intro.php:23
+msgid ""
+"Look at values in  <a href='http://rgbtrade.org/introcuction/colors'>color"
+msgstr ""
+"Zie waarde in <a href='http://kleureneconomie.nl/inleiding/kleuren/'>kleur"
+
+#: category.php:179 category.php:195
+msgid "Display Title"
+msgstr "Weergave Titel"
+
+#: category.php:195 category.php:211
+msgid "English Title"
+msgstr "Engelstalige Titel"
+
+#: adlist.php:275 adlist.php:339 adlist.php:341 adlist.php:342 adlist.php:358
+msgid "Offered:"
+msgstr "Aangeboden:"
+
+#: adlist.php:277 adlist.php:341 adlist.php:343 adlist.php:344 adlist.php:360
+msgid "Requested:"
+msgstr "Gevraagd:"
+
+#: logout.php:23 logout.php:24 logout.php:40
+msgid "You have now been logged out."
+msgstr "U bent nu uitgelogd"
+
+#: logout.php:26 logout.php:27 logout.php:43
+msgid "Continue"
+msgstr "Ga verder"
+
+#: contact.php:40 contact.php:41 contact.php:57
+#, php-format
+msgid ""
+"A participant of the website %s with the nickname %s has sent you a "
+"message. \n"
+"You may visit his profile at %s. Please read the message below.\n"
+"\n"
+msgstr ""
+"Een deelnemer aan de website %s met de gebruikersnaam %s heeft je een "
+"bericht gestuurd. \n"
+"Je kunt zijn profiel bezoeken via %s.\n"
+" Lees ajb. het bericht hieronder.\n"
+"\n"
+
+#: contact.php:9 contact.php:25
+msgid "Please login before asking for a contact form"
+msgstr "Log aub. eerst in voordat je een contact formulier opvraagt."
+
+#: contact.php:40 contact.php:41 contact.php:57
+#, php-format
+msgid "Dear %s,\n"
+msgstr "Beste %s,\n"
+
+#: includes/rgbtop.php:12 includes/rgbtop.php:16 includes/rgbtop.php:33
+#: includes/rgbtop.php:33
+msgid ""
+"Please make a configuration file first. Use the example includes/rgbConfig-"
+"example.php and name it includes/rgbConfig.php"
+msgstr ""
+"Maak aub. eerst een configuratie bestand. Gebruik het voorbeeld  includes/"
+"rgbConfig-example.php en noem het includes/rgbConfig.php"
+
+#: register.php:38 register.php:44 register.php:60
+msgid "Thank you "
+msgstr "Dank u"
+
+#: register.php:39 register.php:45 register.php:61
+msgid "You can now <a href='editprofile.php'>edit your profile</a>."
+msgstr "U kunt nu <a href='editprofile.php'>uw profiel wijzigen.</a>."
+
+#: includes/whatistext.php:38 includes/whatistext.php:38
+msgid "Read More"
+msgstr ""
+
+#: includes/whatistext.php:40 includes/whatistext.php:40
+msgid ""
+"More documentation is available at <a href='http://rgbtrade.org'>rgbtrade."
+"org</a>. You may also read the <a href='conditionspage.php>conditions</a>."
+msgstr ""
+"Meer documentatie is beschikbaar op <a href='http://kleureneconomie."
+"nl'>kleureneconomie.nl</a>. U kunt ook de <a href='conditionspage."
+"php>voorwaarden</a> doornemen."
+
+#: includes/conditions.php:9 includes/conditions.php:26
+#: includes/conditions.php:26
+msgid ""
+"Cooperate by forming circles of persons or companies who produce and reduce. "
+"This is easiest if you take back your own products and you make sure you "
+"only use compostable or recyclable materials. You may offer the product for "
+"Green that way, not for Blue. Try to reduce the required amount of energy to "
+"make the product or service available for less Red. This means we can do "
+"more with less."
+msgstr ""
+"Werk samen door kringen van personen of bedrijven te vormen, die samen "
+"produceren en reduceren. Dit is het eenvoudigst als u zelf uw eigen "
+"producten terugneemt en u zorgt ervoor dat alle materialen composteerbaar of "
+"recyclebaar zijn.U kunt het product dan aanbieden tegen Groen, niet voor "
+"Blauw. Probeer de hoeveelheid benodigde energie zo klein mogelijk te houden "
+"zodat het product of de dienst tegen minder Rood beschikbaar is. Dit "
+"betekent dat we meer kunnen doen met minder."
+
+#: includes/conditions.php:11 includes/conditions.php:28
+#: includes/conditions.php:28
+msgid ""
+"Anything you do, is your own responsibility. Do not blame other participants "
+"or the developers of this website. Learn from your mistakes and do with it, "
+"what needs to be done."
+msgstr ""
+"Alles dat u doet, is uw eigen verantwoordelijkheid. Geef niet de schuld aan "
+"andere deelnemers of de ontwikkelaars van deze website. Leer van uw fouten "
+"en doe ermee wat ermee gedaan moet worden."
+
+#: includes/conditions.php:13 includes/conditions.php:30
+#: includes/conditions.php:30
+msgid ""
+"Participants are aware that using force on people, animals or even plants is "
+"unbalanced behaviour and leads to unnatural, sub-optimal results. "
+"Participants and their fellow workers, their plants and animals have their "
+"own responsibilities or unique, innate balances. The trick is to recognise "
+"balanced behaviour and let each player go with the flow. "
+msgstr ""
+"Deelnemers zijn zich bewust dat het gebruik van macht over mensen, dieren en "
+"zelfs planten onevenwichtig gedrag is en dat dat leidt tot onnatuurlijke, "
+"sub-optimale resultaten. Deelnemers en hun medewerkers, hun planten en hun "
+"dieren hebben elk hun eigen verantwoordelijkheden of unieke, aangeboren "
+"evenwichten. De truuk  is om gebalanceerd gedrag te herkennen en elke speler "
+"met de stroom te laten gaan."
+
+#: includes/conditions.php:15 includes/conditions.php:32
+#: includes/conditions.php:32
+msgid "Values are determined in the RGB-value scale."
+msgstr "Waarden worden bepaals in de schaal van RGB-waarden."
+
+#: includes/conditions.php:16 includes/conditions.php:33
+#: includes/conditions.php:33
+msgid ""
+"Red represents energy. 1 Red represents the energy in 100 gram sunflower oil."
+msgstr ""
+"Rood staat voor energie. 1 Rood staat voor de energie in 100 gran "
+"zonnebloemolie."
+
+#: includes/conditions.php:17 includes/conditions.php:34
+#: includes/conditions.php:34
+msgid ""
+"Green represents material that can and will be recycled. 1 Green is 100 gram."
+msgstr ""
+"Groen staat voor materiaal dat kan en zal worden gerecycled. 1 Groen is 100 "
+"gram."
+
+#: includes/conditions.php:18 includes/conditions.php:35
+#: includes/conditions.php:35
+msgid ""
+"Blue represents material that cannot or will not be recycled within our "
+"system, i.e. by a participant. 1 Blue is 100 gram."
+msgstr ""
+"Blauw staat voor materiaal dat niet kan of niet zal worden gerecycled binnen "
+"ons systeem, niet door een van de deelnemers. 1 Blauw is 100 gram."
+
+#: includes/conditions.php:19 includes/conditions.php:36
+#: includes/conditions.php:36
+msgid ""
+"Every product or service has a value for Red, Green and Blue of 0 or larger. "
+"Trading parties should be realistic about the values when establishing or "
+"negotiating prices. The most important thing when it comes to pricing is to "
+"put it under the right combination of colours."
+msgstr ""
+"Elk product of dienst heeft een waarde voor Rood, Groen en Blauw van 0 of "
+"hogerKoper en verkoper zijn realistisch over deze waarden als ze "
+"onderhandelen over de prijzen of afspraken maken. Het belangrijkste op het "
+"vlak van de prijsvorming is de keuze van de juiste combinatie van kleuren."
+
+#: includes/conditions.php:21 includes/conditions.php:38
+#: includes/conditions.php:38
+msgid ""
+"All information but your email address - and your password of course - is "
+"publicly available through the website. Email addresses are not shown to "
+"avoid spam. Participants who are logged in can send messages by email "
+"through the contact form. In doing so, you reveal your email address to the "
+"recipient. Backup-databases do contain all information. Backups can or will "
+"be offered to participants in order to guarantee the continuity of the "
+"project. "
+msgstr ""
+"Alle informatie behalve uw email adres - en uw wachtwoord natuurlijk - is "
+"publiek beschikbaar via de website. Email adressen worden niet getoond om "
+"spam te voorkomen. Deelnemers die ingelogd zijn kunnen email berichten "
+"versturen met het contact formulier. Daarmee geef je je email adres af aan "
+"de ontvanger. Backup-databases bevatten alle informatie. Backups kunnen of "
+"zulllen worden aangeboden aan deelnemers om de voortgang van het project te "
+"garanderen."
+
+#: themes/petrol/longtermbox.php:2 themes/petrol/longtermbox.php:2
+msgid "Year"
+msgstr "Jaar"
+
+#: themes/petrol/longtermbox.php:2 themes/petrol/longtermbox.php:2
+msgid "Final day"
+msgstr "Laatste Dag"
+
+#: adlist.php:375 adlist.php:391
+msgid "Ad"
+msgstr "Advertentie"
+
+#: balance.php:62 profile.php:86 transferlist.php:132
+msgid "Transfers"
+msgstr "Boekingen"
+
+#: balance.php:65 profile.php:89 transferlist.php:67
+msgid "Contact"
+msgstr "Neem Contact op"
+
+#: endofyearadmin.php:32 endofyearadmin.php:68
+msgid "End Of Year Administration"
+msgstr "Eindejaars Boekhouding"
+
+#: endofyearadmin.php:69
+msgid "Today "
+msgstr "Vandaag "
+
+#: endofyearadmin.php:69
+msgid ""
+", is the Day Out Of Time for this system. Congratulations.  You should make "
+"sure the End-Of-Year-Administration is done today. So, <a "
+"href='endofyearadmin.php?start=true'>Start the End-Of-Year-Administration</"
+"a>."
+msgstr ""
+", is de Dag Buiten de Tijd voor dit systeem. Gefeliciteerd. Let op dat "
+"deEindejaars Boekhouding vandaag wordt uitgevoerd. Dus, <a "
+"href='endofyearadmin.php?start=true'>Start de Eindejaars Boekhouding</a>."
+
+#: endofyearadmin.php:77
+msgid "Page Closed"
+msgstr "Pagina Gesloten"
+
+#: endofyearadmin.php:78
+msgid ""
+"The End Of Year Administration can only be done at the defined Day Out Of "
+"Time,"
+msgstr ""
+"De Eindejaars Boekhouding kan alleen worden uitgevoerd op de vastgestelde "
+"dag buiten de tijd."
+
+#: endofyearadmin.php:79
+msgid "If it was missed, please contact upstream development for support."
+msgstr "Wanneer deze is gemist, neemt u contact op met de ontwikkelaar."
+
+#: transferlist.php:32
+msgid "Please login before asking for your transfers"
+msgstr "Log a.u.b. in voordat u vraagt om uw boekingen"
+
+#: transferlist.php:64
+msgid "Yearly Totals"
+msgstr "Jaar Totalen"
+
+#: endofyearadmin.php:78
+msgid ""
+"The End Of Year Administration can only be done at the dedined Day Out Of "
+"Time,"
+msgstr ""

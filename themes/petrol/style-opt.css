@@ -1,0 +1,606 @@
+/*  Optimized code, do not edit. Process stylesheet.css with csstody.sf.net
+colors:
+red: ff5555;
+green 00d455
+blue 8080ff
+khaki  008080
+lightgrey f2f2f2
+
+*/
+body {
+  font:  12px verdana,  serif;
+  margin: 0px;
+  padding:0px;
+  height:100%;
+}
+
+
+#top {
+  float:left;
+  width:790px;
+  height:90px;
+  position:absolute;
+  top:4px;
+  left:4px;
+  font:12px verdana,  serif;
+  color: #008080;
+  background-color:white;
+  background: url("images/top_bg.png") no-repeat center center white;
+  background-position: 0px 0px;
+  padding:4px;
+}
+#toplogo {
+  float:left;
+  width:160px;
+  height:80px;
+  position:relative;
+  top:0px;
+  left:4px;
+  background-color:white;
+  background: url("../../images/logo/logo-rgboog.nl.png") no-repeat center center white;
+  background-position: 0px 0px;
+  margin:2px;
+}
+#login {
+  float:right;
+  position:relative;
+  top: 8px;
+  right:10px;
+  width:290px;
+  height:70px;
+  background: url("images/login_bg.png") no-repeat center center ;
+  background-position: 0px 0px;
+  padding:4px;
+  margin:0px;
+}
+#partbox {
+  float:right;
+  position:relative;
+  top: 8px;
+  right:10px;
+ /* width:290px; too small */
+  width:289px; 
+  height:70px;
+  background: url("images/login_bg.png") no-repeat center center ;
+  background-position: 0px 0px;
+  padding:4px;
+  margin:0px;  
+  font:12px verdana,  serif;
+}
+td.pbox {
+  padding:4px;
+}
+
+#topabout {
+  float:left;
+  position:relative;
+  top:20px;
+  left: 20px;
+  font:12px verdana,  serif;
+  color: #008080;
+}
+#leftbar {
+  position:absolute;
+  height:100%;
+  float: left;
+  top: 110px;
+  left:4px;
+  width:165px;
+  border:3px solid #008080;
+  background:#f2f2f2;
+  cursor:default;
+  font:14px verdana,  serif;
+}
+#leftbartb {
+  position:absolute;
+  float: left;
+  top: 110px;
+  left:4px;
+  width:165px;
+  font-size:10px;
+}
+td img { display: block; }
+
+h1#pagetitle {
+  font-size: 16px;
+  color: #008080;
+  text-align:left;
+}
+h1#resultpagetitle {
+  vertical-align:top;
+  font-size: 13px;
+  color: #008080;
+}
+h1#boxpagetitle {
+  font-size: 16px;
+  position:absolute;
+  float:left;
+  top:100px;
+  left:200px;
+  vertical-align:top;
+  font-weight:bold;
+  color: #008080;
+}
+#mainsearch {
+  position:absolute;
+  float:left;
+  top:200px;
+  left:300px;
+  width:210px;
+  height:150px;
+  color: #008080;
+  font-size: 12px;
+  text-align:center;
+}
+table#mainsearch td {
+  width: 70px;
+}
+#mainsearch a {
+    text-decoration:underline;
+}
+#hiddenconditions {
+    position:absolute;
+    float:left;
+    top:400px;
+    left: 190px;
+    visibility:hidden;
+}
+
+
+a:link, a:visited {
+  color: #008080;
+/*  background:white;*/
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background:#008080;
+  text-decoration: underline;
+}
+a:active {
+  color:#f2f2f2;
+  background:#ff5555;
+}
+
+
+
+.formLabel {
+  text-align: right;
+}
+.dataLabel A {
+  text-decoration: underline;
+ }
+
+.formbutton {
+  border: 1px solid #008080;
+  font-size: 12px;
+  color:#008080;
+}
+
+.formInput  {
+  border: 1px solid #008080;
+  background: white;
+  font-size: 12px;
+  color:#008080;
+}
+
+textarea.formInput, textarea {
+  text-align:left;
+}
+
+.mainSearch {
+  border: 1px solid #008080;
+  background: #f2f2f2;
+}
+.miniSearch {
+ font-size:10px ;
+ background: #f2f2f2;
+ padding: 0px;
+ margin:0px;
+}
+input.miniSearch {
+ background: #fff;
+}
+
+fieldset {
+  border:0px;
+}
+
+.lb {
+   background: url(images/bl_16.png) bottom left no-repeat; 
+   margin:-3px;
+   padding:0px;
+ }
+.rb {
+  background: url(images/br_16.png) bottom right no-repeat;
+}
+.lt {
+  background: url(images/tl_16.png) top left no-repeat;
+}
+.rt {background: url(images/tr_16.png) top right no-repeat; 
+  padding:10px;
+}
+
+#leftbartb h1 {
+  font-size:16px;
+  padding:0px;
+  margin:4px 4px 1px 0px;
+  color:#008080;
+}
+
+h1.hred {
+  font-size:16px;
+  color:#ff5555;
+  padding:0px;
+  margin:4px 4px 1px 0px;
+}
+
+a.ared, a.ared:visited,  a.agreen, a.agreen:visited, a.ablue, a.ablue:visited, a.pbox, a.pbox:visited, a.ared:link  {
+  background-color: #f2f2f2;
+
+}
+#leftbartb .ared {
+  font-size:10px;
+  }
+
+a.ared:hover, a.ablue:hover, a.agreen:hover, a.pbox:hover {
+  color:white;
+  background-color:#008080;
+}
+a.ared:active, a.ablue:active, a.agreen:active, a.pbox:active {
+  color:white;
+  background-color:#00d455;
+}
+
+.resultPageNav {
+  font-size: 15px;
+}
+
+h1.hgreen {
+  font-size:16px;
+  color:#00d455;
+  padding:0px;
+  margin:4px 4px 1px 0px;
+}
+h1.hblue {
+  font-size:16px;
+  color:#8080ff;
+  padding:0px;
+  margin:4px 4px 1px 0px;
+}
+.ared {
+  color:#ff5555;
+  margin-top:0px;
+  padding:0px;
+  text-decoration:underline;
+}
+.agreen {
+  color:#00d455;
+  margin-top:0px;
+  padding:0px;
+  text-decoration:underline;
+}
+
+.ablue {
+  color:#8080ff;
+  margin-top:0px;
+  padding:0px;
+  text-decoration:underline;
+}
+.boxtitle {
+  font-size: 13px ;
+  color: #008080;
+ /* width:140px; */
+}
+
+
+
+label, .datalabel {
+  font-size: 10px;
+  color: #008080;
+  padding: 1px 1px 1px 1px;
+  vertical-align:top;
+  text-align:left;
+  width:25%;
+}
+.hordata {
+  font: 14px verdana, serif;
+  color: #008080;
+  padding: 1px 1px 1px 1px;
+  vertical-align:middle;
+  text-align:left;
+}
+
+td.datalabel {
+  text-align:right;
+  vertical-align:middle;
+}
+.hordatalabel {
+  font: 11px  verdana, serif;
+  color: #008080;
+  padding: 1px 1px 1px 1px;
+  text-align:left;
+  vertical-align:middle;
+  width:25%;
+}
+
+
+.wdatalabel {
+  font: 11px  verdana, serif;
+  color: #008080;
+  padding: 2px 4px 2px 4px;
+  vertical-align:top;
+  text-align:left;
+}
+
+.data {
+  font: 12px  verdana, serif;
+  color: black;
+  padding: 1px 1px 1px 1px;
+}
+.wdata {
+  font: 12px verdana, serif;
+  color: black;
+ /* padding: 0px 0px 1px 1px; */
+  padding:2px;
+  text-align:left;
+  vertical-align:top;
+}
+
+.wdatasmall {
+  font: 8px  verdana, serif;
+  color: black;
+  padding:1px;
+  text-align:left;
+  vertical-align:top;
+}
+td.wdata a, td.wdata a:visited , th.wdatalabel a, td.wdatalabel a, td.datalabel a  {
+  background:#f2f2f2;
+  color:#008080;
+}
+td.wdata a:hover, th.wdatalabel a:hover,    td.wdatalabel a:hover, td.datalabel a:hover  {
+  color:white;
+  background:#008080;
+}
+
+a#wdatabox {
+  background-color: #f2f2f2;
+}
+
+
+#centerbox {
+  position:absolute;
+  top: 140px;
+  left: 190px;
+  float:left;
+  background: url('images/305_550_bg.png') no-repeat top left white;
+  width:305px;
+  height:550px;
+  padding: 5px 5px 3px 7px;
+}
+
+.message {
+  position:absolute;
+  left:190px;
+  width:400px;
+  height:200px;
+  top:160px;
+}
+
+h1.message{
+  position:relative;
+  top:0px;
+  left:0px;
+  font: bold 18px  verdana, serif;
+  color: #008080;
+  height:25px;
+}
+
+#centerbox-single {
+  position:absolute;
+  top: 140px;
+  left: 190px;
+  float:left;
+  width:263px;
+}
+#rightbox {
+  position:absolute;
+  top: 140px;
+  left: 534px;
+  float:left;
+  width:264px;
+}
+
+#contents {
+  position:relative;
+  float:left;
+  top:120px;
+  left:190px;
+  width:500px;
+  height:1250px; 
+}
+
+#twocolbox {
+  position:absolute;
+  float:left;
+  top:290px;
+  left:190px;
+  width:590px;
+  height:400px;
+}
+div#newtransferbox {
+  position:absolute;
+  float:left;
+  top:150px;
+  left:190px;
+  width:590px;
+  background: url('images/450_420_bg.png') no-repeat top left white;
+}
+div#registerbox {
+  position:absolute;
+  float:left;
+  top:150px;
+  left:190px;
+  width:590px;
+  background: url('images/450_220_bg.png') no-repeat top left white;
+}
+
+div#contactbox {
+  position:absolute;
+  float:left;
+  top:140px;
+  left:190px;
+  width:590px;
+  background: url('images/450_420_bg.png') no-repeat top left white;
+}
+
+
+ div#newadbox {
+  position:absolute;
+  float:left;
+  top:140px;
+  left:190px;
+  width:590px;
+}
+
+
+
+/* of all those wide boxes, only these are to stay: resultbox_low and high
+*/
+
+#resultbox_low {
+  position:relative;
+  float:left;
+  top:290px;
+  left:190px;
+  width:590px;
+  height:400px;
+}
+
+#resultbox_high {
+  position:relative;
+  float:left;
+  top:100px;
+  left:190px;
+  width:590px;
+  height:400px;
+}
+
+#docbox {
+  font: 14px verdana, serif;
+  position:absolute;
+  top:100px;
+  left:190px;
+  width:590px;
+}
+#docbox h1 {
+  font: 18px verdana, serif;
+  font-weight: bold;
+  color:#008080;
+    
+}
+#docbox h2 {
+  font: 15px verdana, serif;
+  font-weight: bold;
+  color:#008080;
+}
+
+
+#resultbox_high h2 {
+  text-indent:18px;
+  font:  12px  verdana, serif;
+  color:#008080;
+}
+
+div#editprofilebox {
+  position:absolute;
+  float:left;
+  top:150px;
+  left:190px;
+  width:590px;
+  /* background: url('images/450_630_bg.png') no-repeat top left white; */
+}
+
+
+.databox {
+  padding: 3px 3px 3px 5px;
+  margin: 3px;
+}
+.wdatabox {
+  padding: 0px;
+  margin: 0px;
+}
+
+.box95 {
+  padding: 5px 0px 3px 7px;
+  background: url('images/back_95.png') no-repeat top left white;
+  height:102px;
+  width:260px;
+  margin:3px;
+  margin:0px;
+}
+
+
+label.bred {
+  font: 14px  verdana, serif;
+  color:  #ff0000;
+}
+
+label.bgreen {
+  font: 14px verdana, serif;
+  color:  #009900;
+}
+label.bblue {
+  font: 14px verdana, serif;
+  color:  #0000ff;
+}
+.rgbdata {
+  font : 16px verdana;
+  padding: 0px 2px 0px 2px;
+  vertical-align:top;
+  text-align:right;
+  font-weight: bold;
+}
+.r {
+  color: #FF0000;
+}
+.g {
+  color:#009900;
+}
+.b {
+  color:#0000FF;
+}
+.f {
+  font: 10px "courier new", monospace ;
+  vertical-align:middle;
+  text-align:right;
+}
+
+.clear {font-size: 1px; height: 1px}
+
+/* #li {
+  list-style-type:none
+}
+#red8,#blue8,#green8 {
+  width:55px;
+}
+  */
+
+#error_red {
+  color:red;
+}
+#error_green {
+  color:green;
+}
+
+.text {
+  padding: 5px 20px 5px 0px;
+  font: 10pt  verdana;
+}
+
+.boldtext {
+  padding: 5px 20px 5px 0px;
+  font: bold 10pt  verdana ;
+}
+/* EOF */
+

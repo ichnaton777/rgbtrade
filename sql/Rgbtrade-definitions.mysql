@@ -1,0 +1,170 @@
+-- MySQL dump 10.11
+--
+-- Host: localhost    Database: rgboog
+-- ------------------------------------------------------
+-- Server version	5.0.51a-3ubuntu5.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rgbAdCategories`
+--
+
+DROP TABLE IF EXISTS `rgbAdCategories`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `rgbAdCategories` (
+  `adCategoryId` int(11) NOT NULL auto_increment,
+  `adCategoryTitleEn` varchar(32) default NULL,
+  `adCategoryTitleNl` varchar(32) default NULL,
+  `adCategoryParentId` int(11) default NULL,
+  `adCategoryText` text,
+  `adCategoryStatus` enum('available','unavailable') default 'available',
+  PRIMARY KEY  (`adCategoryId`),
+  KEY `adCategoryTitleEn` (`adCategoryTitleEn`),
+  KEY `adCategoryTitleNl` (`adCategoryTitleNl`),
+  KEY `catParents` (`adCategoryParentId`),
+  FULLTEXT KEY `adCategoryText` (`adCategoryText`)
+) ENGINE=MyISAM AUTO_INCREMENT=1478 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `rgbAds`
+--
+
+DROP TABLE IF EXISTS `rgbAds`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `rgbAds` (
+  `adId` int(11) NOT NULL auto_increment,
+  `adUserid` int(11) NOT NULL,
+  `adStatus` enum('live','invisible') default 'live',
+  `adTitle` text,
+  `adText` text,
+  `adLastChange` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `adOfferRequest` enum('offer','request') default NULL,
+  `adRedValue` float NOT NULL default '0',
+  `adGreenValue` float NOT NULL default '0',
+  `adBlueValue` float NOT NULL default '0',
+  `adThumbImage` varchar(256) default NULL,
+  `adBigImage` varchar(256) default NULL,
+  `adGroupId` int(11) NOT NULL default '0',
+  `adCategoryId` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`adId`),
+  KEY `adGroupId` (`adGroupId`),
+  KEY `adCategoryies` (`adCategoryId`,`adGroupId`),
+  KEY `adCategoryId` (`adCategoryId`),
+  KEY `adUserid` (`adUserid`),
+  FULLTEXT KEY `adSubject` (`adTitle`,`adText`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `rgbBalances`
+--
+
+DROP TABLE IF EXISTS `rgbBalances`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `rgbBalances` (
+  `balanceId` int(11) NOT NULL auto_increment,
+  `balanceDateTime` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `balanceRedValue` float NOT NULL default '0',
+  `balanceGreenValue` float NOT NULL default '0',
+  `balanceBlueValue` float NOT NULL default '0',
+  `balanceLastTransferId` int(11) default NULL,
+  `balanceUserId` int(11) NOT NULL,
+  `balanceType` enum('running','milestone') default NULL,
+  PRIMARY KEY  (`balanceId`),
+  KEY `balanceUserId` (`balanceUserId`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `rgbTransfers`
+--
+
+DROP TABLE IF EXISTS `rgbTransfers`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `rgbTransfers` (
+  `transferId` int(11) NOT NULL auto_increment,
+  `transferFromId` int(11) NOT NULL,
+  `transferToId` int(11) NOT NULL,
+  `transferDateTime` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `transferText` text,
+  `transferRedValue` float default NULL,
+  `transferGreenValue` float default NULL,
+  `transferBlueValue` float default NULL,
+  `transferStatus` enum('sent','done','undone') default 'done',
+  `transferById` int(11) default NULL,
+  PRIMARY KEY  (`transferId`),
+  KEY `transferFromId` (`transferFromId`),
+  KEY `transferToId` (`transferToId`),
+  KEY `transferStatus` (`transferStatus`),
+  KEY `transferDateTime` (`transferDateTime`),
+  KEY `transferById` (`transferById`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `rgbUsers`
+--
+
+DROP TABLE IF EXISTS `rgbUsers`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `rgbUsers` (
+  `userId` int(11) NOT NULL auto_increment,
+  `userNick` varchar(40) NOT NULL default '',
+  `userEmail` varchar(60) default NULL,
+  `userAddress` varchar(40) default NULL,
+  `userAddress2` varchar(40) default NULL,
+  `userZipCode` varchar(40) default NULL,
+  `userCity` varchar(40) default NULL,
+  `userRegion` varchar(40) default NULL,
+  `userWebsite` varchar(40) default NULL,
+  `userGpsLongitude` varchar(40) default NULL,
+  `userGpsLattitude` varchar(40) default NULL,
+  `userPassword` varchar(255) default NULL,
+  `userPlan` text,
+  `userAvatar` varchar(120) default NULL,
+  `userStatus` enum('toverify','live','silent','forgotten','system') default 'toverify',
+  `userSessionID` char(50) default NULL,
+  `userLastLog` datetime default NULL,
+  `userPhone1` varchar(12) default NULL,
+  `userPhone2` varchar(12) default NULL,
+  `userBirth` datetime NOT NULL default '2007-07-07 00:00:00',
+  `userVerify` varchar(64) default NULL,
+  PRIMARY KEY  (`userId`),
+  UNIQUE KEY `userNick` (`userNick`),
+  UNIQUE KEY `userEmail` (`userEmail`),
+  KEY `userId` (`userId`),
+  KEY `userStatus` (`userStatus`),
+  FULLTEXT KEY `userZipCode` (`userZipCode`),
+  FULLTEXT KEY `userCity` (`userCity`),
+  FULLTEXT KEY `userRegion` (`userRegion`),
+  FULLTEXT KEY `userWebsite` (`userWebsite`),
+  FULLTEXT KEY `userPlan` (`userPlan`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2008-08-21 18:46:14

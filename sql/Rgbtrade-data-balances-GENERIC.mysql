@@ -1,0 +1,2 @@
+INSERT INTO `rgbBalances` (`balanceId`,  `balanceRedValue`, `balanceGreenValue`, `balanceBlueValue`, `balanceLastTransferId`, `balanceUserId`, `balanceType`) VALUES
+(1, 0, 0, 0, NULL, 1, 'running');

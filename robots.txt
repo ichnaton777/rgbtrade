@@ -1,0 +1,3 @@
+User-agent: *
+Disallow, no-follow: /
+Allow,no-follow: /participants.php, adlist.php

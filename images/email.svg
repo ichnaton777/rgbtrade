@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7409"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   width="210mm"
+   height="297mm"
+   sodipodi:docbase="/var/www/rgb_html/images"
+   sodipodi:docname="email.svg"
+   inkscape:export-filename="/var/www/rgb_html/images/email.png"
+   inkscape:export-xdpi="801.28436"
+   inkscape:export-ydpi="801.28436">
+  <metadata
+     id="metadata7414">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7412" />
+  <sodipodi:namedview
+     inkscape:cy="369.47574"
+     inkscape:cx="132.69363"
+     inkscape:zoom="13.893067"
+     inkscape:window-height="624"
+     inkscape:window-width="1058"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:window-x="5"
+     inkscape:window-y="49"
+     inkscape:current-layer="svg7409" />
+  <rect
+     style="fill:#f2f2f2;fill-opacity:1;stroke:black;stroke-width:0.9528119;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect7477"
+     width="15.882424"
+     height="11.851637"
+     x="106.50435"
+     y="678.91492"
+     rx="0.071978398"
+     ry="12.524232" />
+  <path
+     style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"
+     d="M 106.7475,690.66739 L 114.47177,683.02022 L 122.34722,690.64992 L 106.7475,690.66739 z "
+     id="path7481"
+     sodipodi:nodetypes="cccc" />
+  <path
+     style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;opacity:1"
+     d="M 106.45958,678.93853 L 114.64042,685.95898 L 121.87168,679.03159 L 106.45958,678.93853 z "
+     id="path7479"
+     sodipodi:nodetypes="cccc" />
+  <text
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;font-family:Arial"
+     x="127.06929"
+     y="689.32916"
+     id="text8368"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8370"
+       x="127.06929"
+       y="689.32916">Email</tspan></text>
+</svg>

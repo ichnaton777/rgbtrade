@@ -1,0 +1,541 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Kleureneconomie
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: post@kleureneconomie.nl\n"
+"POT-Creation-Date: 2008-05-12 12:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: profile.php:133
+msgid "A summary of yearly closing balances, before the reset."
+msgstr "Een samenvatting van totalen per jaar, voor de reset."
+
+#: ad.php:694 ad.php:766
+msgid "Ad Editor"
+msgstr "Advertentie Bewerken"
+
+#: editprofile.php:39 profile.php:104
+msgid "Adress"
+msgstr "Adres"
+
+#: adlist.php:92 balance.php:150 balance.php:151 profile.php:74
+msgid "Ads"
+msgstr "Advertenties"
+
+#: adlist.php:214 adlist.php:219
+msgid "Advertiser"
+msgstr "Adverteerder"
+
+#: adlist.php:98
+msgid "Are you sure you want to delete this ad?"
+msgstr "Wil je deze advertentie echt verwijderen?"
+
+#: ad.php:118
+msgid "Are you sure you want to do this two times?"
+msgstr "Weet je zeker dat je dit tweemaal wilt doen?"
+
+#: editprofile.php:47 profile.php:109
+msgid "Area"
+msgstr "Regio"
+
+#: category.php:105
+msgid "Available"
+msgstr "Beschikbaar"
+
+#: editprofile.php:59 participants.php:35 profile.php:114
+msgid "Avatar"
+msgstr "Avatar"
+
+#: balance.php:28 balance.php:39 includes/participantbox.php:14
+#: profile.php:78
+#, php-format
+msgid "Balance"
+msgstr "Balans"
+
+#: participants.php:35
+msgid "Balance RGB"
+msgstr "Balans RGB"
+
+#: ad.php:215 ad.php:272 ad.php:361 adlist.php:117 balance.php:57
+#: category.php:183 categorylist.php:57 categorylist.php:83
+#: transfer.php:123
+msgid "Blue"
+msgstr "Blauw"
+
+#: balance.php:113 balance.php:119
+msgid "By"
+msgstr "Door"
+
+#: ad.php:905 contact.php:64 editprofile.php:72 register.php:112
+#: transfer.php:137
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ad.php:421 adlist.php:148 adlist.php:154
+msgid "Category"
+msgstr "Categorie"
+
+#: includes/sidebar.php:44
+msgid "Category Editor"
+msgstr "Categorie Beheer"
+
+#: categorylist.php:15 categorylist.php:25
+msgid "Category List"
+msgstr "Categorie Lijst"
+
+#: editprofile.php:62
+msgid "Change Avatar"
+msgstr "Wijzig Avatar"
+
+#: editprofile.php:9 editprofile.php:31
+msgid "Change Profile"
+msgstr "Wijzig Profiel"
+
+#: editprofile.php:45 profile.php:108
+msgid "City"
+msgstr "Plaats"
+
+#: category.php:144
+msgid "Color"
+msgstr "Kleur"
+
+#: contact.php:59
+msgid "Contact with"
+msgstr "Contact met"
+
+#: balance.php:67
+msgid "Date"
+msgstr "Datum"
+
+#: adDelete.php:35
+msgid "Delete Ad"
+msgstr "Advertentie verwijderen"
+
+#: adlist.php:249 adlist.php:254
+msgid "Delete this Ad"
+msgstr "Advertentie verwijderen"
+
+#: ad.php:436 balance.php:67
+msgid "Description"
+msgstr "Omschrijving"
+
+#: participants.php:35
+msgid "Details"
+msgstr "Details"
+
+#: profile.php:82
+msgid "Edit Profile"
+msgstr "Wijzig Profiel"
+
+#: editprofile.php:37 register.php:100
+msgid "Email"
+msgstr "Email"
+
+#: balance.php:108 transfer.php:92
+msgid "From"
+msgstr "Van"
+
+#: ad.php:201 ad.php:257 ad.php:332 adlist.php:116 balance.php:55
+#: category.php:169 categorylist.php:49 categorylist.php:74
+#: transfer.php:112
+msgid "Green"
+msgstr "Groen"
+
+#: ad.php:370 category.php:222
+msgid "Group"
+msgstr "Groep"
+
+#: ad.php:367
+#, php-format
+msgid "Group %s[change]%s"
+msgstr "Groep %s[wijzigen]%s"
+
+#: includes/fakebox.php:6 includes/loginbox.php:6
+#: includes/participantbox.php:5
+msgid "How does it work?"
+msgstr "Hoe werkt het?"
+
+#: register.php:108
+#, php-format
+msgid "I agree to the %s conditions %s."
+msgstr "Ik ga accoord met de %s voorwaarden %s."
+
+#: category.php:249
+msgid "International Title"
+msgstr "Internationale Titel"
+
+#: includes/rgbUser.php:195
+msgid "Location"
+msgstr "Locatie"
+
+#: includes/participantbox.php:14
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: ad.php:840
+msgid "Main Color"
+msgstr "Hoofd Kleur"
+
+#: contact.php:62 profile.php:76
+msgid "Message"
+msgstr "Bericht"
+
+#: includes/participantbox.php:12
+msgid "My"
+msgstr "Mijn"
+
+#: includes/participantbox.php:13
+msgid "My Ads"
+msgstr "Mijn Advertenties"
+
+#: includes/participantbox.php:15
+msgid "New Ad"
+msgstr "Nieuwe Advertentie"
+
+#: categorylist.php:38
+msgid "New Category"
+msgstr "Nieuwe Categorie"
+
+#: balance.php:151 balance.php:152 profile.php:80 transfer.php:57
+#: transfer.php:82
+msgid "New Transfer"
+msgstr "Nieuwe Boeking"
+
+#: includes/pagedresults.php:100 includes/pagedresults.php:101
+msgid "Next"
+msgstr "Volgende"
+
+#: ad.php:134 ad.php:785
+msgid "Offer"
+msgstr "Aanbod"
+
+#: adlist.php:212 adlist.php:217
+msgid "Offer/Request"
+msgstr "Aanbod/Vraag"
+
+#: includes/rgbtop.php:82 includes/rgbtop.php:83
+#: includes/rgbtop.php:85 includes/rgbtop.php:89
+#: includes/rgbtop.php:90 includes/rgbtop.php:93
+#: includes/rgbtop.php:95 includes/rgbtop.php:96
+#: includes/rgbtop.php:97 includes/rgbtop.php:104
+#: includes/rgbtop.php:107
+msgid "Offers"
+msgstr "Aanbod"
+
+#: adlist.php:120
+msgid "Offers Found"
+msgstr "Gevonden aanbod"
+
+#: contact.php:52 register.php:38
+msgid "Ok"
+msgstr "Ok"
+
+#: balance.php:16 contact.php:32
+msgid "Ooops"
+msgstr "Oeps"
+
+#: transfer.php:35
+msgid "Oops"
+msgstr "Oeps"
+
+#: includes/fakebox.php:5
+msgid "Opening Soon:"
+msgstr "Binnenkort Geopend:"
+
+#: balance.php:67
+msgid "Participant"
+msgstr "Deelnemer"
+
+#: includes/loginbox.php:7 includes/participantbox.php:6
+#: includes/rgbtop.php:82 includes/rgbtop.php:83
+#: includes/rgbtop.php:84 includes/rgbtop.php:87
+#: includes/rgbtop.php:89 includes/rgbtop.php:90
+#: includes/rgbtop.php:95 includes/rgbtop.php:96
+#: includes/rgbtop.php:98 includes/rgbtop.php:105
+#: includes/rgbtop.php:108 participants.php:11
+msgid "Participants"
+msgstr "Deelnemers"
+
+#: editprofile.php:66 includes/loginbox.php:20 register.php:102
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: register.php:21
+msgid "Passwords do not match. Enter the same password twice."
+msgstr ""
+"Wachtwoorden komen niet overeen. Type hetzelfde wachtwoord tweemaal."
+
+#: editprofile.php:49 editprofile.php:51 profile.php:110
+#: profile.php:111
+msgid "Phone"
+msgstr "Telefoon"
+
+#: ad.php:460 adlist.php:210 adlist.php:215
+msgid "Photo"
+msgstr "Foto"
+
+#: editprofile.php:55 participants.php:35 profile.php:113
+msgid "Plan"
+msgstr "Plan"
+
+#: includes/rgbtop.php:59
+#, php-format
+msgid "Please %s continue"
+msgstr "%s Ga verder"
+
+#: register.php:64
+msgid ""
+"Please enter the characters of the Security Code in the textfield. "
+"Note that all characters on the keyboard may be used."
+msgstr ""
+"Type aub. de tekens van de Veiligheids Code in het tekstveld.Merk "
+"op dat alle toetsen van het toetsenbord kunnen worden gebruikt."
+
+#: balance.php:16
+msgid "Please login before asking for your balance"
+msgstr "Log eerst in voordat je om een balans vraagt"
+
+#: includes/pagedresults.php:86 includes/pagedresults.php:87
+msgid "Previous"
+msgstr "Vorige"
+
+#: balance.php:149 balance.php:150 includes/participantbox.php:12
+msgid "Profile"
+msgstr "Profiel"
+
+#: balance.php:67
+msgid "RGB"
+msgstr "RGB"
+
+#: transfer.php:87
+msgid "RGB Transfer"
+msgstr "RGB Boeking"
+
+#: ad.php:188 ad.php:242 ad.php:305 adlist.php:115 balance.php:53
+#: category.php:155 categorylist.php:39 categorylist.php:66
+#: transfer.php:98
+msgid "Red"
+msgstr "Rood"
+
+#: includes/loginbox.php:5 register.php:90
+msgid "Register"
+msgstr "Registreer"
+
+#: register.php:74
+msgid "Registration"
+msgstr "Registreren"
+
+#: register.php:21
+msgid "Registration Failed"
+msgstr "Registratie mislukt"
+
+#: register.php:39
+msgid "Registration completed. You can now log in."
+msgstr "Registratie voltooid. U kunt nu inloggen."
+
+#: editprofile.php:69 register.php:104
+msgid "Repeat Password"
+msgstr "Herhaal Wachtwoord"
+
+#: ad.php:147
+msgid "Request"
+msgstr "Vraag"
+
+#: includes/rgbtop.php:82 includes/rgbtop.php:83
+#: includes/rgbtop.php:86 includes/rgbtop.php:89
+#: includes/rgbtop.php:90 includes/rgbtop.php:94
+#: includes/rgbtop.php:95 includes/rgbtop.php:96
+#: includes/rgbtop.php:97 includes/rgbtop.php:105
+#: includes/rgbtop.php:108
+msgid "Requests"
+msgstr "Vraag"
+
+#: adlist.php:158
+msgid "Requests Found"
+msgstr "Gevonden vraag"
+
+#: ad.php:547 ad.php:569 category.php:241 editprofile.php:73
+#: register.php:115
+msgid "Save"
+msgstr "Opslaan"
+
+#: includes/searchbox.php:11
+msgid "Search"
+msgstr "Zoek"
+
+#: includes/rgbtop.php:84 includes/rgbtop.php:88
+#: includes/rgbtop.php:91 includes/rgbtop.php:97
+#: includes/rgbtop.php:99 includes/rgbtop.php:109
+msgid "Search in:"
+msgstr "Zoeken in"
+
+#: ad.php:452 category.php:234 contact.php:63 register.php:106
+msgid "Security Code"
+msgstr "Veiligheids Code"
+
+#: register.php:63
+msgid "Security Code Incorrect"
+msgstr "Veiligheids Code niet correct"
+
+#: balance.php:152 balance.php:153
+msgid "Send Email"
+msgstr "Stuur Email"
+
+#: contact.php:60
+msgid "Send Message"
+msgstr "Stuur bericht"
+
+#: contact.php:65
+msgid "Send by Email"
+msgstr "Versturen per Email"
+
+#: register.php:48
+#, php-format
+msgid ""
+"Someone has alreay taken this username or email address. You should "
+"%s try again %s with a different username or %s ask for a new "
+"password %s for this email address."
+msgstr ""
+"Iemand heeft deze gebruikersnaam of email adres al in gebruik.%"
+"sProbeer het nogmaals%s met een andere gebruikersnaam of %svraag om "
+"een nieuw wachtwoord op dit email adres."
+
+#: contact.php:61
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: includes/searchbox.php:47 transfer.php:137
+msgid "Submit"
+msgstr "Verzenden"
+
+#: category.php:256
+msgid "The International Title has a minimum of 3 characters"
+msgstr "De Internationale Titel heeft minimaal 3 tekens"
+
+#: category.php:272
+msgid "The Title has a minimum of 3 characters"
+msgstr "De titel heeft tenminste 3 tekens"
+
+#: contact.php:32
+msgid "The security code is incorrect."
+msgstr "De veilidheids code is niet correct"
+
+#: category.php:283
+msgid "There is no valid ID, this must be a bug"
+msgstr "Er is geen geldig ID, dit moet een storing zijn"
+
+#: ad.php:172
+msgid "Title"
+msgstr "Titel"
+
+#: balance.php:105 transfer.php:89
+msgid "To"
+msgstr "Aan"
+
+#: transfer.php:72
+msgid "Transfer Completed"
+msgstr "Boeking Voltooid"
+
+#: category.php:117
+msgid "Unavailable"
+msgstr "Niet beschikbaar"
+
+#: categorylist.php:65
+msgid "Unavailable Categories"
+msgstr "Niet beschikbare Categorën"
+
+#: includes/loginbox.php:18 register.php:98
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: register.php:47
+msgid "Username or Email address is already in use"
+msgstr "Gebruikersnaam of email adres is al in gebruik"
+
+#: ad.php:807
+msgid "Value"
+msgstr "Waarde"
+
+#: editprofile.php:53 profile.php:112
+msgid "Website"
+msgstr "Website"
+
+#: includes/participantbox.php:4
+msgid "Welcome"
+msgstr "Welkom"
+
+#: includes/fakebox.php:4 includes/loginbox.php:4
+#: includes/participantbox.php:3
+msgid "What is"
+msgstr "Wat is"
+
+#: transfer.php:35
+msgid "Who is it you want to transfer to?"
+msgstr "Aan of van wie wilde u een boeking doen?"
+
+#: balance.php:51 profile.php:131
+msgid "Yearly Total"
+msgstr "Totaal per Jaar"
+
+#: ad.php:757 ad.php:760
+msgid "You can now see how visitors will see your ad."
+msgstr "Je kunt nu zien, hoe bezoekers je advertentie zullen zien."
+
+#: adDelete.php:21
+#, php-format
+msgid ""
+"Your ad has been deleted. Please %s continue to your ad list %s."
+msgstr ""
+"Je advertentie is verwijderd. Ga %s door naar het advertentie "
+"overzicht %s."
+
+#: ad.php:757
+msgid "Your ad has been placed"
+msgstr "Je advertentie is geplaatst"
+
+#: ad.php:760
+msgid "Your ad has been saved"
+msgstr "Je advertentie is opgeslagen"
+
+#: contact.php:52
+msgid "Your message has been sent."
+msgstr "Uw bericht is verzonden"
+
+#: transfer.php:73
+#, php-format
+msgid ""
+"Your transfer has been completed. You can now %s check your balance "
+"%s"
+msgstr "Uw boeking is voltooid. U kunt nu uw %s balans controleren%s"
+
+#: editprofile.php:43 profile.php:106
+msgid "Zip Code"
+msgstr "Postcode"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: transfer.php:19 transfer.php:90
+#, fuzzy
+msgid "from"
+msgstr "van"
+
+#: transfer.php:71
+msgid "message"
+msgstr "bericht"
+
+#: transfer.php:82
+msgid "to or from"
+msgstr "naar of van"
