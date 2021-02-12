@@ -5,34 +5,45 @@ This is the documentation for the Rgbtrade web-based advertising and payment sys
 ## Introduction
 
 *[Purpose of this system](purpose.md "Purpose")
+
 *[How to get a sustainable lifestyle](lifestyle.md Lifestyle)
 
 ## Browsing ads
 
 *[Overview of an ad](overview-of-an-ad.md)
+
 *[Search by keyword](search-by-keyword.md)
 
-* Browse by category
+*[Browse by category](browse-by-category.md)
+
 * Search by participant
+
 * Browse by participant
 
 ## Registration
 
 * Requirements for registration.
+
 * The Registration Form
+
 * Errors during registration
 
 ## Your Profile
 
 * Editing your profile
+
 * About the Balance
+
 * Transaction history
+
 * Yearly reset
+
 * Lost Password
 
 ## Advertising
 
 * Placing an ad
+
 * Using the Category Editor
 
 Transfer / Payments in RGB
