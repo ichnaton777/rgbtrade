@@ -6,7 +6,7 @@ This is the documentation for the Rgbtrade web-based advertising and payment sys
 
 *[Purpose of this system](purpose.md "Purpose")
 
-*[How to get a sustainable lifestyle](lifestyle.md Lifestyle)
+*[How to get a sustainable lifestyle](lifestyle.md "Lifestyle")
 
 ## Browsing ads
 
