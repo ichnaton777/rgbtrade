@@ -38,7 +38,7 @@
   $orfilter=""; //offer request filter
 
   if(isset($_GET['or'])) {
-      $orfilter= " and adOfferRequest = '" . mysqli_real_escape_string($_GET['or']). "'";
+      $orfilter= " and adOfferRequest = '" . mysqli_real_escape_string($db,$_GET['or']). "'";
   }
 
 
@@ -46,7 +46,7 @@
 
 
   if (isset($_GET['userId'])) {
-    $idfilter = ' and  userId = '. mysqli_real_escape_string($_GET['userId']);
+    $idfilter = ' and  userId = '. mysqli_real_escape_string($db,$_GET['userId']);
   } else {
       $idfilter ="";
   }
@@ -56,7 +56,7 @@
     if($_GET['nick'] =="") {
       $nick = $_SESSION['userNick'];
     } else {
-      $nick = mysqli_real_escape_string($_GET["nick"]);
+      $nick = mysqli_real_escape_string($db,$_GET["nick"]);
     }
     $nickfilter="  and userNick ='". $nick . "'";
     $geturl .= "&nick=$nick";
@@ -64,7 +64,7 @@
       $nickfilter = "";
   }
   if(isset($_GET['resultpage'])) {
-     $resultpage = mysqli_real_escape_string($_GET['resultpage']);
+     $resultpage = mysqli_real_escape_string($db,$_GET['resultpage']);
   }
   if(isset($_GET['searchBox'])) {
     // main search facility, read out searchbOx from index.php and set the correct section if known (should be)
@@ -92,7 +92,7 @@
   }
   if(isset($_GET['adId'])) {
       // filter for sinlge (permalink) ad
-      $q = mysqli_real_escape_string($_GET['adId']);
+      $q = mysqli_real_escape_string($db,$_GET['adId']);
        pc_debug("DB GET adid $q",__FILE__,__LINE__);
       $adidfilter= " and adId = $q";
   } else {
@@ -108,18 +108,18 @@
 
 
   if (isset($_GET['categoryid'])) {
-      $geturl .= "&categoryid=" . mysqli_real_escape_string($_GET['categoryid']);
+      $geturl .= "&categoryid=" . mysqli_real_escape_string($db,$_GET['categoryid']);
        // filters with m for main sql, filters with s for subqueries, others a re for all.
       //
-       $catfilter_m = " and GROUPS.adCategoryId = " .  mysqli_real_escape_string($_GET['categoryid']);
-       $catfilter_s = " and rgbAdCategories.adCategoryId = " .  mysqli_real_escape_string($_GET['categoryid']);
+       $catfilter_m = " and GROUPS.adCategoryId = " .  mysqli_real_escape_string($db,$_GET['categoryid']);
+       $catfilter_s = " and rgbAdCategories.adCategoryId = " .  mysqli_real_escape_string($db,$_GET['categoryid']);
       pc_debug("category param received, setting filters",__FILE__,__LINE__);
        // filter ads to this category
        // we also need a simpler join, to avoid empty selections. that will be $sqlmain
        $filtername="adCategoryId";
-       $filtervalue = "='" . mysqli_real_escape_string($_GET['categoryid']) . "'";
+       $filtervalue = "='" . mysqli_real_escape_string($db,$_GET['categoryid']) . "'";
        $bigfilter = "";
-       $groupfilter = " and adCategoryId = " .  mysqli_real_escape_string($_GET['categoryid']);
+       $groupfilter = " and adCategoryId = " .  mysqli_real_escape_string($db,$_GET['categoryid']);
        // almost $sqlmain="select distinct adId, adUserId, adStatus, adTitle, adText, adLastChange, adOfferRequest, adRedValue, adGreenValue, adBlueValue, adThumbImage,          adBigImage, rgbAds.adGroupId, rgbAds.adCategoryId, userNick,userCity ,           unix_timestamp(adLastChange) as adLastChange, unix_timestamp(userBirth) as userBirth, GROUPS.adCategoryTitleNl as grouptitle, GROUPS.adCategoryTitleNl as cattitle 
        // from rgbAds, rgbUsers ,  rgbAdCategories as GROUPS 
        // where rgbUsers.userId = rgbAds.adUserId   and adGroupId = GROUPS.adCategoryId  ";
@@ -134,7 +134,7 @@
            from rgbAds, rgbUsers ,  rgbAdCategories as GROUPS , rgbAdCategories as CATNAMES
            where rgbUsers.userId = rgbAds.adUserId   and adGroupId = GROUPS.adCategoryId and 
            CATNAMES.adCategoryId = rgbAds.adCategoryId 
-           $sql_main_filter and GROUPS.adCategoryId = " .  mysqli_real_escape_string($_GET['categoryid']) . "
+           $sql_main_filter and GROUPS.adCategoryId = " .  mysqli_real_escape_string($db,$_GET['categoryid']) . "
 
            UNION
 
@@ -145,7 +145,7 @@
            from rgbAds, rgbUsers ,  rgbAdCategories as CATEGORIES, rgbAdCategories as GROUPNAMES
            WHERE rgbUsers.userId = rgbAds.adUserId   
            and   rgbAds.adCategoryId = CATEGORIES.adCategoryId and GROUPNAMES.adCategoryId = rgbAds.adGroupId
-           $sql_main_filter  and CATEGORIES.adCategoryId = " .  mysqli_real_escape_string($_GET['categoryid']) . "
+           $sql_main_filter  and CATEGORIES.adCategoryId = " .  mysqli_real_escape_string($db,$_GET['categoryid']) . "
           
           
            ";
@@ -199,7 +199,7 @@
         $contactlink = "";
      }
 
-     $showUser->setUserNick(mysqli_real_escape_string(stripslashes($_GET['nick'])));
+     $showUser->setUserNick(mysqli_real_escape_string($db,stripslashes($_GET['nick'])));
 
      if($user->getloggedin() &&$user->getUserNick() <> $showUser->getUserNick()) {
         $tlink = $showUser->getUserLink("transfer.php",T_("New Transfer")) . " | " ;

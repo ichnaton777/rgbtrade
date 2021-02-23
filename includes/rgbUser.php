@@ -290,27 +290,26 @@ class rgbUser {
     $sql = sprintf("select * from rgbUsers where userNick = '%s'", $this->getUserNick());
     pc_debug("running load user $sql",__FILE__,__LINE__);
     $q   = mysqli_query($db,$sql)  ;
-    if (mysqli_error($db)) {
+    if (mysqli_error($db) || mysqli_num_rows($q) < 1) {
         pc_debug("ERROR load_user:" . $this->userId  . mysqli_error($db),__FILE__,__LINE__);
+    } else {
+        $res = mysqli_fetch_assoc($q);
+        $this->userEmail    = $res['userEmail'];
+        $this->userAddress  = $res["userAddress"];
+        $this->userId       = $res["userId"];
+        $this->userNick     = $res["userNick"];
+        $this->userAddress  = $res["userAddress"];
+        $this->userAddress2 = $res["userAddress2"];
+        $this->userZipCode  = $res["userZipCode"];
+        $this->userCity     = $res["userCity"];
+        $this->userRegion   = $res["userRegion"];
+        $this->userPhone1   = $res["userPhone1"];
+        $this->userPhone2   = $res["userPhone2"];
+        $this->userPlan     = $res["userPlan"];
+        $this->userAvatar   = $res["userAvatar"];
+        $this->userWebsite  = $res["userWebsite"];
+        $this->userBirth    = $res["userBirth"];
     }
-    $res = mysqli_fetch_assoc($q);
-    echo "\n\nRes=";
-    var_dump($res);
-    $this->userEmail    = $res['userEmail'];
-    $this->userAddress  = $res["userAddress"];
-    $this->userId       = $res["userId"];
-    $this->userNick     = $res["userNick"];
-    $this->userAddress  = $res["userAddress"];
-    $this->userAddress2 = $res["userAddress2"];
-    $this->userZipCode  = $res["userZipCode"];
-    $this->userCity     = $res["userCity"];
-    $this->userRegion   = $res["userRegion"];
-    $this->userPhone1   = $res["userPhone1"];
-    $this->userPhone2   = $res["userPhone2"];
-    $this->userPlan     = $res["userPlan"];
-    $this->userAvatar   = $res["userAvatar"];
-    $this->userWebsite  = $res["userWebsite"];
-    $this->userBirth    = $res["userBirth"];
    }
 
   // does not belong here, actually, but it makes things work today.

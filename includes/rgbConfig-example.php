@@ -47,6 +47,7 @@
  #
  define('SYSTEM_NAME','RGBtrade');                      # Name for usage by humans. Name of the system.
  define('SYSTEM_URL','http://your.com/');              # http://server.com/path/ example http://rgboog.nl/
+ define('SYSTEM_EMAIL','rgbtrade@your.com');   # email address you're using to send email from. should attend box for bounces perhaps
  define('DEBUG',true);                                 # enable debugging in /log/error.txt. true or false
  define('SYSTEMMODE',"beta");                          # prelive, beta, live
  define('CATEGORY_EDIT',true);                         # enable category editor. true or false

@@ -37,7 +37,7 @@
 <? 
   $error="";
   if(isset($_REQUEST['verify'])) {
-      $verify = mysql_real_escape_string($_REQUEST['verify']);
+      $verify = mysqli_real_escape_string($db,$_REQUEST['verify']);
       $error  = "verified";
       pc_debug("error set to verified",__FILE__,__LINE__);
   }
@@ -54,12 +54,12 @@
       case "verified";
       // we have an incoming link with the verify code. if correct, present new password form. the most basic approach.
       //
-      $nick = mysql_real_escape_string($_REQUEST['userNick']);
-      $email = mysql_real_escape_string($_REQUEST['userEmail']);
+      $nick = mysqli_real_escape_string($db,$_REQUEST['userNick']);
+      $email = mysqli_real_escape_string($db,$_REQUEST['userEmail']);
       $qv  = sprintf("select * from rgbUsers where userVerify = '%s' and userEmail = '%s' and userNick = '%s'",$verify,$email,$nick);
-      $rv  = mysql_query($qv);
-      pc_debug("mysql : $qv " . mysql_error(), __FILE__,__LINE__);
-      if(mysql_num_rows($rv) == 1) { 
+      $rv  = mysqli_query($db,$qv);
+     // no verify in the debug log  pc_debug("mysqli : $qv " . mysqli_error($db), __FILE__,__LINE__);
+      if(mysqli_num_rows($rv) == 1) { 
           // okay this is good. verify code ok.
           //
           // if the password is supplied, eat and digest.
@@ -67,21 +67,21 @@
           //
           pc_debug("good. One user with this data. eat password now", __FILE__,__LINE__);
           if (isset($_REQUEST['newpassword']) &&  isset($_REQUEST['newpassword2'])) {
-              $newpassword = mysql_escape_string($_REQUEST['newpassword']);
-              $newpassword2 = mysql_escape_string($_REQUEST['newpassword2']);
+              $newpassword = mysqli_escape_string($db,$_REQUEST['newpassword']);
+              $newpassword2 = mysqli_escape_string($db,$_REQUEST['newpassword2']);
               if ($newpassword == $newpassword2) {
                   $sqlu = sprintf("update rgbUsers set userPassword = password('%s') , userVerify='' where  userEmail = '%s' and userNick = '%s'", 
                                    $newpassword, $email,$nick);
-                  $qu   = mysql_query($sqlu);
-                  if(!mysql_error()) {
+                  $qu   = mysqli_query($db,$sqlu);
+                  if(!mysqli_error($db,)) {
                       $result = T_("Your password has been changed. Please continue.");
-                      pc_debug("password updated " . $sqlu, __FILE__,__LINE__);
+                      // no verify in debug pc_debug("password updated " . $sqlu, __FILE__,__LINE__);
                       print '<h1 id="resultpagetitle">' . T_("Your password has been changed.") . '</h1>';
                       print T_("You can now log in.");
                   } else {
                       $result = T_("The change of password has failed.");
                       print '<h1 id="resultpagetitle">' . $result . "</h1>";
-                      pc_debug("password not updated : $sqlu" . mysql_error(), __FILE__,__LINE__);
+                      pc_debug("password not updated : $sqlu" . mysqli_error($db), __FILE__,__LINE__);
                   }
               } else {
                   // passwords do not match, client side code has not been running there...
@@ -117,17 +117,17 @@ EOF;
           // print error
           print "<h1 id=\"resultpagetitle\">" . T_("Invalid codes") . "</h1>" . 
               T_("The combination of email address, username and verification code is not valid.").
-          pc_debug("not 1 return from query : $qv " . mysql_error(),__FILE__,__LINE__);
+          pc_debug("not 1 return from query : $qv " . mysqli_error($db),__FILE__,__LINE__);
       }
       break;
   case "sendpassword";
   pc_debug("to send password",__FILE__,__LINE__);
-         $nick = mysql_real_escape_string($_POST['userNick']);
-         $email = mysql_real_escape_string($_POST['userEmail']);
+         $nick = mysqli_real_escape_string($db,$_POST['userNick']);
+         $email = mysqli_real_escape_string($db,$_POST['userEmail']);
 
          $q1=sprintf("select * from rgbUsers where userNick = '%s' and userEmail = '%s'", $nick,$email);
-         $r1=mysql_query($q1);
-         if(mysql_num_rows($r1) <>1 ) {
+         $r1=mysqli_query($db,$q1);
+         if(mysqli_num_rows($r1) <>1 ) {
              // exactly one return means uniq user, which should. nick is unique , email is unique.
              print T_("Email address and password do not match.") ;
              exit;
@@ -136,18 +136,18 @@ EOF;
          $rand = substr(str_shuffle($alphanum), 0, 20);
          $verify = md5($rand);
          $sql2=sprintf("update rgbUsers set userVerify ='%s' where userNick = '%s' and userEmail = '%s'",$verify,$nick,$email);
-         $q2=mysql_query($sql2);
+         $q2=mysqli_query($db,$sql2);
          $server = $_SERVER["HTTP_HOST"];
          $script = $_SERVER['SCRIPT_NAME'];
 
-         if(mysql_error()) {
-             pc_debug("mysql error $sql2" . mysql_error() ,__FILE__,__LINE__);
+         if(mysqli_error($db)) {
+             pc_debug("mysqli error $sql2" . mysqli_error($db) ,__FILE__,__LINE__);
          }
 
          $subject       = T_("Verification email for a new password");
          $intro = sprintf(T_("A new password has been requested for user %s on the website %s. To change your password, follow this link: \n\nhttp://%s/%s?userEmail=%s&userNick=%s&verify=%s \n\nIf you do not want a new password or you have not asked for this message, please ignore this email.\n\nThank You!"), $nick , SYSTEM_NAME, $server, $script ,$email, $nick, $verify);
 
-         $from = "noreply@rgboog.nl";
+         $from = SYSTEM_EMAIL;
          $headers = "From: $from";
          if (mail("$email","$subject","$intro",$headers)) {
            pc_debug("Mail sent succesfully",__FILE__,__LINE__);
