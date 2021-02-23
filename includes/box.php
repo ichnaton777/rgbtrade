@@ -28,7 +28,7 @@
     var $text;
     var $visible;
 
-    function Box()  {
+    function __construct()  {
       $this->style="";
       $this->title="";
       $this->text="";

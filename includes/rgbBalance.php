@@ -46,9 +46,9 @@
     }
     $db = $GLOBALS['db'];
     $sql = sprintf("insert into rgbBalances ( 
-        balanceUserId,          balanceType, balanceName) values (
-        %s,                     '%s' , '%s')", 
-        $this->balanceUserId, $this->balanceType, $this->balanceName
+        balanceUserId,          balanceType ) values (
+        %s,                     '%s'  )", 
+        $this->balanceUserId, $this->balanceType
                    );
     $q = mysqli_query($db,$sql);
     if(!$q) { 
@@ -62,16 +62,16 @@
     global $db;
    // if (!is_numeric($this->getUserid())) return false;
     $sql = sprintf("select balanceId, balanceDateTime, balanceRedValue, balanceGreenValue, balanceBlueValue, 
-                    balanceLastTransferId, balanceUserId, balanceType, balanceName from rgbBalances 
+                    balanceLastTransferId, balanceUserId, balanceType from rgbBalances 
                     where balanceUserId = '%s' 
                     and   balanceType = '%s'",
                     $this->getUserId(),
                     "running"
                   );
     if(! $q = mysqli_query($db,$sql)) {
-      pc_debug("mysqli error: $sql".  mysqli_error($db),__FILE__,__LINE__);
+      pc_debug("mysqli error 75: $sql".  mysqli_error($db),__FILE__,__LINE__);
     } 
-    $res = mysqli_fetch_array($q);
+    $res = mysqli_fetch_assoc($q);
     $this->balanceId         = $res["balanceId"];
     $this->balanceDateTime   = $res["balanceDateTime"];
     $this->balanceRedValue->setValue($res["balanceRedValue"]);
@@ -79,7 +79,6 @@
     $this->balanceBlueValue->setValue($res["balanceBlueValue"]);
     $this->balanceUserId     = $res["balanceUserId"];
     $this->balanceType       = $res["balanceType"];
-    $this->balanceName       = $res["balanceName"];
     pc_debug("loaded balance " . $this->balanceId . "with $sql. " , __FILE__,__LINE__ );
 
     return true;

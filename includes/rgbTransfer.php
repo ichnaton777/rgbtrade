@@ -27,7 +27,7 @@
     var $transferBlueValue;
     var $transferStatus;
 
-    function rgbTransfer() {
+    function __construct() {
       $this->transferStatus     = "sent";
       $this->transferRedValue   = new rgbDimension;
       $this->transferGreenValue = new rgbDimension;

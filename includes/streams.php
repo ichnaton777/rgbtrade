@@ -1,6 +1,7 @@
 <?php
 /*
    Copyright (c) 2003, 2005 Danilo Segan <danilo@kvota.net>.
+   Adapted in 2021 for php7.
 
    This file is part of PHP-gettext.
 
@@ -49,7 +50,7 @@ class StringReader {
   var $_pos;
   var $_str;
 
-  function StringReader($str='') {
+  function __construct($str='') {
     $this->_str = $str;
     $this->_pos = 0;
   }
@@ -86,7 +87,7 @@ class FileReader {
   var $_fd;
   var $_length;
 
-  function FileReader($filename) {
+  function __construct($filename) {
     if (file_exists($filename)) {
 
       $this->_length=filesize($filename);
@@ -148,7 +149,7 @@ class FileReader {
 // Preloads entire file in memory first, then creates a StringReader 
 // over it (it assumes knowledge of StringReader internals)
 class CachedFileReader extends StringReader {
-  function CachedFileReader($filename) {
+  function __construct($filename) {
     if (file_exists($filename)) {
 
       $length=filesize($filename);

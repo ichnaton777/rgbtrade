@@ -30,7 +30,7 @@
     var $tableWidth;
 
 
-    function resultbox($myBoxDivId, $myBoxTableId, $myBoxCols, $myTheme, 
+    function __construct($myBoxDivId, $myBoxTableId, $myBoxCols, $myTheme, 
                        $myBgColor, $myBoxClass, $myTableWidth=604) {
       $this->boxDivId   = $myBoxDivId;
       $this->boxTableId = $myBoxTableId;

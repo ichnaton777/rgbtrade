@@ -23,7 +23,7 @@
 
   $showUser = new rgbUser;
   if (isset($_GET['nick'])) {
-    $showUser->setUserNick(mysql_real_escape_string(stripslashes($_GET['nick'])));
+    $showUser->setUserNick(mysqli_real_escape_string($db,stripslashes($_GET['nick'])));
   } else {
     if ($user->getloggedin()) {
        $showUser->setUserNick($user->getUserNick());

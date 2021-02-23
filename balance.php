@@ -23,7 +23,7 @@
 
   $showUser = new rgbUser;
   if (isset($_GET['nick'])) {
-    $showUser->setUserNick(mysql_real_escape_string(stripslashes($_GET['nick'])));
+    $showUser->setUserNick(mysqli_real_escape_string($db,stripslashes($_GET['nick'])));
   } else {
     if ($user->getloggedin()) {
        $showUser->setUserNick($user->getUserNick());
@@ -109,13 +109,13 @@
     $sql = "select *, DATE(balanceDateTime) as baldate from rgbBalances where 
        balanceType = 'milestone' and balanceUserId = " . $showUser->getUserId() . 
        " order by balanceDateTime asc limit $balcount" ;
-    $q= mysql_query($sql);
-    if(mysql_error()) {
-       pc_debug("mysql error: " . mysql_error()  , __FILE__,__LINE__);
+    $q= mysqli_query($db,$sql);
+    if(mysqli_error($db)) {
+       pc_debug("mysqli error: " . mysqli_error($db)  , __FILE__,__LINE__);
     } else {
-          if(mysql_num_rows($q) >0) {
-             while($result=mysql_fetch_array($q)) {
-             pc_debug("balance= " . $result['balanceName'] ,__FILE__,__LINE__);
+          if(mysqli_num_rows($q) >0) {
+             while($result=mysqli_fetch_assoc($q)) {
+             // pc_debug("balance= " . $result['balanceName'] ,__FILE__,__LINE__);
              //  print "<tr><td class='minidata'>" . $result['balanceName'] . "</td>";
              $yearlyBox->boxLeftEdge();
              $yearlyBox->boxCell(strftime("%F",strtotime($result['baldate'])),'rdata');
@@ -136,96 +136,6 @@
          }   
      }
     $yearlyBox->boxEnd();
-
-    /* leave this for TransferList
-    $transfersBox = new resultBox("resultbox_low","transferbox","5","petrol","#ffffff","resultbox_low",604);
-    $transfersBox->boxStart();
-    // $titles = array(T_('Date')=>'60',T_('Participant')=>'100',T_('RGB')=>'140',T_('Description')=>'260');
-    $titles =  array(T_('Date')=>'110',T_('Participant')=>'110',T_('Red')=>'110',T_('Green')=>'110',T_('Blue')=>'110');
-    $titles2 = array('&nbsp;'=>'110',' '=>'110',T_('Description')=>'110','.'=>'110',','=>'110');
-    $transfersBox->boxHorTitleRow($titles);
-    // get also the Nick of the ById
-    $query = sprintf("select transferId, transferFromId, transferToId, transferText, transferById,
-                     transferRedValue, transferGreenValue, transferBlueValue, 
-                     transferDateTime, userNick, userId               
-                     from rgbTransfers, rgbUsers               
-                     where rgbTransfers.transferFromId = '%s' 
-                     and rgbTransfers.transferToId = rgbUsers.userId    
-                     UNION 
-                     select transferId, transferFromId, transferToId, transferText, transferById,
-                     transferRedValue, transferGreenValue, transferBlueValue, 
-                     transferDateTime, userNick, userId               
-                     from rgbTransfers, rgbUsers               
-                     where rgbTransfers.transferToId = '%s' 
-                     and rgbTransfers.transferFromId = rgbUsers.userId 
-                     order by transferDateTime desc",
-                     $showUser->getUserId(),
-                     $showUser->getUserId()
-                   );
-                   pc_debug("query is $query",__FILE__,__LINE__);
-    $pageSize = 4;
-    $pagedResults = new MySQLPagedResultSet($query,$pageSize,$db);
-      $transfersBox->boxRowBorder();
-    while ($result = $pagedResults->fetchObject()) {
-      $myTransfer = new rgbTransfer;
-      $myTransfer->setId($result->transferId);
-      $myTransfer->setFromId($result->transferFromId);
-      $myTransfer->setToId($result->transferToId);
-      $myTransfer->setById($result->transferById);
-      $myTransfer->setText($result->transferText);
-      $myTransfer->transferRedValue->setValue($result->transferRedValue);
-      $myTransfer->transferGreenValue->setValue($result->transferGreenValue);
-      $myTransfer->transferBlueValue->setValue($result->transferBlueValue);
-      $myTransfer->setDateTime($result->transferDateTime);
-      $myTransferPartnerId   = $result->userId;   # id of the other fellow
-      $myTransferPartnerNick = $result->userNick; # nick of the other fellow
-      if ($myTransferPartnerId == $myTransfer->getToId()) {
-        $toFrom = T_("To") . " "; # to
-        $sign = "- ";
-      } else {
-        $toFrom = T_("From") . " "; # to
-        $sign = "";
-      }
-      // who ordered this transfer (the byId)? there is no byNick in the result, but who needs it. It's
-      // either the partner, or just me (showUser)
-      $by = T_("By");
-      if ($myTransfer->getById() == $myTransferPartnerId) {
-          $by .= " <a href=\"balance.php?nick=$myTransferPartnerNick\">$myTransferPartnerNick</a>";
-      } else {
-          $by .=  "  <a href=\"balance.php?nick=" . $showUser->getUserNick() . "\">" . $showUser->getUserNick() . "</a>" ;
-      }
-      T_("By");
-
-      $transfersBox->boxLeftEdge();
-      $fDate = Date("D M j Y G:i", $myTransfer->getDateTimeString());
-      $transfersBox->boxCell($fDate,"wdatasmall");
-      $transfersBox->boxCell($toFrom . "<a href=\"balance.php?nick=$myTransferPartnerNick\">$myTransferPartnerNick</a> <br/>
-                             $by","top");
-      // rgbbox = 140px : RGB: 15, value : 90, frac 25 , 
-      
-           $transfersBox->boxCell( $sign .   $myTransfer->transferRedValue->getRoundedValue() . " " . $myTransfer->transferRedValue->get8th());
-           $transfersBox->boxCell( $sign .   $myTransfer->transferGreenValue->getRoundedValue() . " " . $myTransfer->transferGreenValue->get8th());
-           $transfersBox->boxCell( $sign .   $myTransfer->transferBlueValue->getRoundedValue() . " " .  $myTransfer->transferBlueValue->get8th());
-      $transfersBox->boxRightEdge();
-      $transfersBox->boxLeftEdge();
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxCellSpan("Descripton ","title","3");
-      $transfersBox->boxRightEdge();
-      $transfersBox->boxLeftEdge();
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxCell($myTransfer->getTheText(),"top");
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxCell(" ","top");
-      $transfersBox->boxRightEdge();
-      $transfersBox->boxRowBorder();
-      $transfersBox->boxRowBorder();
-    }
-    $navigation = '<tr><td  background="themes/petrol/images/left_edgew.png" width="16px" height="100%"></td><th colspan="1"></th><th valign="bottom"  colspan ="3">' . $pagedResults->getPageNav("nick=" . $showUser->getUserNick()) .  '</th><td background="themes/petrol/images/right_edgew.png" width="16px" height="100%"></td></tr>';
-       print $navigation;
-      $transfersBox->boxEnd();
-     */ 
   ?>
 
  </div><!-- div contents -->

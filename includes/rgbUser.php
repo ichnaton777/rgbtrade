@@ -124,7 +124,7 @@ class rgbUser {
     } else {
       pc_debug("user insert okay:" . $this->userNick . mysqli_error($db), __FILE__,__LINE__);
       # print "$sql okay";
-      $this->setUserId(mysqli_insert_id());
+      $this->setUserId(mysqli_insert_id($db));
       return true;
     }
   }
@@ -288,10 +288,15 @@ class rgbUser {
   function loadUser(){
     global $db;
     $sql = sprintf("select * from rgbUsers where userNick = '%s'", $this->getUserNick());
-    pc_debug("running $sql",__FILE__,__LINE__);
-    $q   = mysqli_query($db,$sql);
+    pc_debug("running load user $sql",__FILE__,__LINE__);
+    $q   = mysqli_query($db,$sql)  ;
+    if (mysqli_error($db)) {
+        pc_debug("ERROR load_user:" . $this->userId  . mysqli_error($db),__FILE__,__LINE__);
+    }
     $res = mysqli_fetch_assoc($q);
-    $this->userEmail    = $res["userEmail"];
+    echo "\n\nRes=";
+    var_dump($res);
+    $this->userEmail    = $res['userEmail'];
     $this->userAddress  = $res["userAddress"];
     $this->userId       = $res["userId"];
     $this->userNick     = $res["userNick"];
@@ -306,7 +311,6 @@ class rgbUser {
     $this->userAvatar   = $res["userAvatar"];
     $this->userWebsite  = $res["userWebsite"];
     $this->userBirth    = $res["userBirth"];
-    pc_debug("load_user:" . $this->userId  . mysqli_error($db),__FILE__,__LINE__);
    }
 
   // does not belong here, actually, but it makes things work today.
