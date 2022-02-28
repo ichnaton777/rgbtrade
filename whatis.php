@@ -22,7 +22,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>RGBoog</title>
+    <title>
+<?php print(SYSTEM_NAME); ?>
+</title>
     <link rel="stylesheet" type="text/css" href="themes/petrol/stylesheet.css" />
   </head>
   <body onLoad='document.searchForm.searchBox.focus()'>
