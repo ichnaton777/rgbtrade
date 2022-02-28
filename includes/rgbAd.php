@@ -203,7 +203,7 @@
 
       pc_debug("mysqli insert ad $sql" , __FILE__,__LINE__);
       if ($q = mysqli_query($db,$sql)) {
-        $this->setAdId(mysqli_insert_id());
+        $this->setAdId(mysqli_insert_id($db));
         pc_debug("inserted ad is adId" . $this->getAdId() ,__LINE__,__FILE__);
         return ($this->getAdId());
       } else {

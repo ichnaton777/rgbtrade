@@ -37,6 +37,6 @@
 of programmers from rgbtrade.org.");?>
  <div class="boldtext"><?php print T_("Read More"); ?></div>
 <div class="text">
-<?php print T_("More documentation is available at <a href='http://rgbtrade.org'>rgbtrade.org</a>. You may also read the <a href='conditionspage.php'>conditions</a>."); ?>
+<?php print T_("More documentation is available at <a href='http://kleureneconomie.nl'>kleureneconomie.nl</a>. You may also read the <a href='conditionspage.php'>conditions</a>."); ?>
 </div>
 </div>

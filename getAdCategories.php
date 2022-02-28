@@ -21,7 +21,7 @@
   // if(isset($_REQUEST['myCat']) && !is_null($_REQUEST['myCat'])  && !$_REQUEST['myCat']=="undefined" ) {
   if(isset($_REQUEST['myCat'])){
       // getting a sub category, so set myCatId to the current one
-       $myCatId = mysql_real_escape_string($_REQUEST['myCat']);
+       $myCatId = mysqli_real_escape_string($db,$_REQUEST['myCat']);
           echo "var oGroup = document.createElement('optgroup');\n";
           echo "oGroup.value = 'Maak uw keuze';\n";
        pc_debug("myCatId from REQUEST",__FILE__,__LINE__);
@@ -34,46 +34,18 @@
 
   $myCat = new rgbAdCategory;
   $cats_0=array();
-  // $cats = getColourCatArray("red",'available',$myCatId);
   $cats = getCategoriesByParent($myCatId);
   pc_debug("myCatId = $myCatId",__FILE__,__LINE__);
-
-  while(list($key,$val) = each($cats)) {
-      //if($key!=$myCatId || $myCatId >0 ) {
-           // don't offer myself as a parent for myself! --< should do so only in category editor: not important.
-      // // thanx to http://www.thescripts.com/forum/thread92041.html
-        
-      /* firefox only:
-            echo "var oOption = document.createElement('option'); 
-            oOption.value = \"$key\"; 
-            oOption.text = \"$val\";  
-            oGroup.appendChild(oOption);";
-       */
+  foreach ($cats as $key => $val) {
       echo "var anOption = new Option(\"$val\",\"$key\",false,false);";
-            
-
-
-      // }
-       //echo "obj.options[obj.options.length].value = $val";
-       //echo "obj.options[obj.options.length].text = $key";
-       // echo "obj.options[obj.options.length] = new Option('$key','$val');\n";
-
             if ($myCatId == -1) {
                 // implicitly, no catId, ie. we are giving a group, not a category
                 pc_debug(" adding to adGroup",__FILE__,__LINE__);
-                /*ff only
-                  echo "var oSelect = document.ad.adGroup;
-                        oSelect.appendChild(oGroup);";
-                 */
                   echo "var oSelect = document.ad.adGroup;
                         oSelect.options[oSelect.options.length] = anOption;";
                   
             } else {
                 pc_debug(" adding to adCategory",__FILE__,__LINE__);
-                /* ff only  echo "var oSelect = document.ad.adCategory;
-                        oSelect.appendChild(oGroup);";
-                 */
-
                   echo "var oSelect = document.ad.adCategory;
                         oSelect.options[oSelect.options.length] = anOption;";
             }

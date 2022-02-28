@@ -43,7 +43,7 @@
       if(isset($_GET['adId'])) {
           pc_debug("DB ad to load ", __FILE__,__LINE__);
           $myAd = new rgbAd();
-          $myAd->setAdId(mysql_real_escape_string($_GET['adId']));
+          $myAd->setAdId(mysqli_real_escape_string($db,$_GET['adId']));
           $myAd->load();
           $postaction="edit";
           $form->NAME = "ad";
@@ -68,14 +68,14 @@
        $myAd = new rgbAd();
        $postaction="add";
        // need to pick these up to overwrite the defaults before the form is built
-       $myAd->setAdGroupId(mysql_real_escape_string($_POST['adGroup']));
-       $myAd->setAdCategoryId(mysql_real_escape_string($_POST['adCategory']));
+       $myAd->setAdGroupId(mysqli_real_escape_string($db,$_POST['adGroup']));
+       $myAd->setAdCategoryId(mysqli_real_escape_string($db,$_POST['adCategory']));
        pc_debug("DB add ! ",__FILE__,__LINE__);
    break;
    case "save":
        $myAd = new rgbAd();
        $postaction="save";
-       $myAd->setAdId(mysql_real_escape_string($_POST['adId']));
+       $myAd->setAdId(mysqli_real_escape_string($db,$_POST['adId']));
        $form->NAME = "ad";
        // lets see who owns this ad ?
        $myAd->load(); // need to get current userid
@@ -91,23 +91,6 @@
        $myAd->LoadForm($form); // get submitted values in Ad object. need them here.
     break;
     case "delete":
-        /* moved to separate page
-           if (isset($_REQUEST['confirm']) && $_REQUEST['confirm'] == "true") {
-                $postaction = "delete";
-                $myAd = new rgbAd();
-                $myAd->setAdId(mysql_real_escape_string($_GET['adId']));
-                $myAd->load();
-                pc_debug("to delete " . $myAd->getAdId() , __FILE__,__LINE__);
-                //$myAd->delete();
-            } else {
-                $postaction = "confirmdelete";
-                $myAd = new rgbAd();
-                $myAd->setAdId(mysql_real_escape_string($_GET['adId']));
-                $myAd->load();
-                pc_debug("to confirm delete " . $myAd->getAdId() , __FILE__,__LINE__);
-                $myAd->confirmDeleteMessage();
-            }
-         */
         exit;
    break;
    default:
@@ -345,10 +328,10 @@
          
          
        if($myAd->getAdGroupId() <=0) {
-           $myAd->setAdGroupId(mysql_real_escape_string($_REQUEST['adGroup']));
+           $myAd->setAdGroupId(mysqli_real_escape_string($db,$_REQUEST['adGroup']));
        }
        if($myAd->getAdCategoryId() <=0) {
-           $myAd->setAdCategoryId(mysql_real_escape_string($_REQUEST['adCategory']));
+           $myAd->setAdCategoryId(mysqli_real_escape_string($db,$_REQUEST['adCategory']));
        }
          // better set too much possible values than get into a impossible case later in the show
          $cats = getGroupsByParent(1);

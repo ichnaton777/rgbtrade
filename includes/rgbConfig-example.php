@@ -30,9 +30,13 @@
  #
  setlocale(LC_TIME,'en');                             # enable formatting. nl or en
  define('DEFAULT_LOCALE', 'en_US');                   # en_US, nl_NL 
-                                                      # pick one of the available or write your own
- define('DOC_URL', 'http://rgbtrade.kleureneconomie.nl/documentation/');    # place on Internet where the documentation lives. 
- define('DOC_COL_URL', 'https://kleureneconomie.nl/basics/rgb-colours-unit-of-currency/');   #  documentation for: what is RGB?
+
+/* new in 2022 to fix escape string */
+define('CHARSET') = "utf8mb4" ; // following examples
+
+# pick one of the available or write your own
+ define('DOC_URL', 'https://github.com/ichnaton777/rgbtrade');    # place on Internet where the documentation lives. 
+ define('DOC_COL_URL', 'https://book.kleureneconomie.nl/part2/fullpackage.html');   #  documentation for: what is RGB?
 
  /* nl_NL settings in this block.
  * setlocale(LC_TIME,'nl');                             # enable formatting. nl or en

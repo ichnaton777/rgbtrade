@@ -29,7 +29,7 @@
 
   if(isset($_GET['adId'])) {
       $myAd = new rgbAd();
-      $myAd->setAdId(mysql_real_escape_string($_GET['adId']));
+      $myAd->setAdId(mysqli_real_escape_string($db,$_GET['adId']));
       $myAd->load();
        if ($myAd->getUserId() == $user->getUserId() ) {
            $myAd->delete();

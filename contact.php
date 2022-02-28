@@ -55,6 +55,9 @@
          
          $subject       = "[" . SYSTEM_NAME . "]" . htmlspecialchars($_POST['subject']);
          $message       = htmlspecialchars($_POST['message']);
+         if ($message == "") {
+             $message = "- the message has been left empty - ";
+         }
          $intro = sprintf(T_("Dear %s,\n") . T_("A participant of the website %s with the nickname %s has sent you a message. \nYou may visit his profile at %s. Please read the message below.\n\n"),
              $recipientNick, SYSTEM_NAME, $user->getUserNick(), SYSTEM_URL . "profile.php?nick=" . $user->getUserNick()) ;
          $showUser = new rgbUser;
@@ -83,7 +86,7 @@
       $sendText     = T_("Send by Email");
 
   $showUser = new rgbUser;
-     $showUser->setUserNick(mysql_real_escape_string(stripslashes($_GET['nick'])));
+     $showUser->setUserNick(mysqli_real_escape_string($db,stripslashes($_GET['nick'])));
      if($user->getUserNick() <> $showUser->getUserNick()) {
         $tlink = $showUser->getUserLink("transfer.php",T_("New Transfer")) . " | " ;
      } else {

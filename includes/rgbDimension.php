@@ -33,7 +33,8 @@
       pc_debug($message,__FILE__,__LINE__);
       return false;
     } else {
-      $sum = $rounded +  $fracted / 8 ; 
+      $explode = explode('/',$fracted);
+      $sum = intval($rounded) +  floatval($explode[0]/8) ; 
       $this->setValue($sum);
       $message = "correct fracted values $rounded and $fracted setting to . $sum"; 
       pc_debug($message,__FILE__,__LINE__);

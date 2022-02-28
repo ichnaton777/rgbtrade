@@ -402,18 +402,6 @@ class rgbUser {
 
    function saveUser(){
     global $db;
-    if (get_magic_quotes_gpc()) {
-      $email    = stripslashes(mysqli_real_escape_string($db,$_POST['email']));
-      $address1 = stripslashes(mysqli_real_escape_string($db,$_POST['address']));
-      $address2 = stripslashes(mysqli_real_escape_string($db,$_POST['address2']));
-      $zipcode  = stripslashes(mysqli_real_escape_string($db,$_POST['zipcode']));
-      $city     = stripslashes(mysqli_real_escape_string($db,$_POST['city']));
-      $phone1   = stripslashes(mysqli_real_escape_string($db,$_POST['phone1']));
-      $phone2   = stripslashes(mysqli_real_escape_string($db,$_POST['phone2']));
-      $plan     = stripslashes(mysqli_real_escape_string($db,$_POST['plan']));
-      $region   = stripslashes(mysqli_real_escape_string($db,$_POST['region']));
-      $website  = stripslashes(mysqli_real_escape_string($db,$_POST['website']));
-    } else {
       $email    = mysqli_real_escape_string($db,$_POST['email']);
       $address1 = mysqli_real_escape_string($db,$_POST['address']);
       $address2 = mysqli_real_escape_string($db,$_POST['address2']);
@@ -424,8 +412,11 @@ class rgbUser {
       $plan     = mysqli_real_escape_string($db,$_POST['plan']);
       $region   = mysqli_real_escape_string($db,$_POST['region']);
       $website  = mysqli_real_escape_string($db,$_POST['website']);
-    }
-    if( !strstr($website,'http://') ) {
+
+/* we now require either http or https for your website, i
+   if not we set http for default */
+
+    if( !strstr($website,'http://') && !strstr($website,'https://') ) {
         $website = 'http://' . $website;
     }
     // check that the email adress is still unique, or database update query will fail.
@@ -464,11 +455,7 @@ class rgbUser {
 
     function savePassword() {
         global $db;
-        if (get_magic_quotes_gpc()) {
-          $password    = stripslashes(mysqli_real_escape_string($db,$_POST['password1']));
-        } else {
           $password    = mysqli_real_escape_string($db,$_POST['password1']);
-        }
         $sql = sprintf("update rgbUsers set 
              userPassword     = password('%s')
              where userId = '%s'",

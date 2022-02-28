@@ -131,11 +131,7 @@
       // $message=var_export($this);
       pc_debug("saving transfer",__FILE__,__LINE__);
       global $db;
-      if (get_magic_quotes_gpc()) {
-        $this->transferText    = stripslashes(mysqli_real_escape_string($db,$_POST['transferText']));
-      } else {
         $this->transferText    = mysqli_real_escape_string($db,$_POST['transferText']);
-      }
       $red = $_POST['redValue'];
       if($red=="") {
         $red = 0;
@@ -181,7 +177,7 @@
       pc_debug("mysqli $tSql" , __FILE__,__LINE__);
 
       if ($qT = mysqli_query($db,$tSql) ) {
-        $this->transferId = mysqli_insert_id();
+        $this->transferId = mysqli_insert_id($db);
       }
 
         // TO user sees his balance going PLUS

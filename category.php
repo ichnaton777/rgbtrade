@@ -138,9 +138,9 @@
     //
     //
     $sqlc = sprintf("select count(adId) from rgbAds where adCategoryId = %s or adGroupId = %s ", $myCat->getCategoryId(), $myCat->getCategoryId());
-    pc_debug("sql: $sqlc" . mysql_error(), __FILE__,__LINE__);
-    $qc = mysql_query($sqlc);
-    $res=mysql_fetch_row($qc);
+    $qc = mysqli_query($db ,$sqlc);
+    pc_debug("sql: $sqlc" . mysqli_error($db), __FILE__,__LINE__);
+    $res=mysqli_fetch_row($qc);
     pc_debug("row count: " . $res[0] , __FILE__,__LINE__);
     // // workaround to disable horrible bug with radio colour
 

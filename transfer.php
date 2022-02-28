@@ -30,10 +30,10 @@
   if(isset($_POST['action']) && $_POST['action'] == 'newtransfer') {
     pc_debug("new transfer",__FILE__,__LINE__);
     if ($_POST['tofrom'] == "to") {
-        $transfer->setToId(mysql_real_escape_string($_POST['transferUserId']));
+        $transfer->setToId(mysqli_real_escape_string($db,$_POST['transferUserId']));
         $transfer->setFromId($_SESSION['userId']);
     } elseif ( $_POST['tofrom'] == 'from' ) {
-        $transfer->setFromId(mysql_real_escape_string($_POST['transferUserId']));
+        $transfer->setFromId(mysqli_real_escape_string($db,$_POST['transferUserId']));
         $transfer->setToId($_SESSION['userId']);
     }
     if($transfer->checkTransfer()) {

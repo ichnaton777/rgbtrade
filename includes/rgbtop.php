@@ -52,6 +52,8 @@ if('DEBUG') {
     or die('Could not connect: ' . mysqli_error($db));
   mysqli_select_db($db,$dbname) or die('Could not select database');
 
+ mysqli_set_charset($db,'CHARSET'); 
+
 
   define('PROJECT_DIR', realpath('./'));
   define('LOCALE_DIR', PROJECT_DIR .'/includes/locale');
