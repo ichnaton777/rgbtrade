@@ -32,7 +32,8 @@
  define('DEFAULT_LOCALE', 'en_US');                   # en_US, nl_NL 
 
 /* new in 2022 to fix escape string */
-define('CHARSET') = "utf8mb4" ; // following examples
+define('CHARSET', "utf8mb4") ; # following examples
+
 
 # pick one of the available or write your own
  define('DOC_URL', 'https://github.com/ichnaton777/rgbtrade');    # place on Internet where the documentation lives. 
