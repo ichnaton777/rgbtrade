@@ -56,8 +56,9 @@
   $profileBox->boxCell($user->getUserEdit("address",($user->getAddress())));
   $profileBox->boxRightEdge();
 
+     
   $profileBox->boxLeftEdge();
-  $profileBox->boxCell(T_(""),"datalabel");
+  $profileBox->boxCell("","datalabel");
   $profileBox->boxCell($user->getUserEdit("address2",($user->getAddress2())));
   $profileBox->boxRightEdge();
 
